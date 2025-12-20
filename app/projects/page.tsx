@@ -18,6 +18,19 @@ export default function ProjectsPage() {
             supported platform integration.
           </p>
         </Link>
+        <Link
+          href="/projects/homebase"
+          className="block rounded-lg border p-4 hover:bg-gray-50"
+        >
+          <h2 className="text-lg font-semibold">
+            HomeBase: Full-Stack Roommate Coordination App
+          </h2>
+          <p className="text-sm">
+            Built frontend + backend features with Next.js, FastAPI, PostgreSQL, Docker, and
+            JWT authentication.
+          </p>
+        </Link>
+
       </div>
     </main>
   );
