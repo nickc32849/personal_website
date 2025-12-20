@@ -32,7 +32,7 @@ export default function ProjectsPage() {
             HomeBase: Full-Stack Roommate Coordination App
           </h2>
           <p className="text-sm">
-            Built frontend + backend features with Next.js, FastAPI, PostgreSQL, Docker,
+            Built features across the stack with Next.js, FastAPI, PostgreSQL, Docker,
             and JWT authentication.
           </p>
         </Link>
@@ -45,8 +45,8 @@ export default function ProjectsPage() {
             Trade Wars, Emissions, and Global Data Analysis
           </h2>
           <p className="text-sm">
-            Research assistant work using cross-country datasets, DiD concepts, and
-            GVAR-related data preparation.
+            Research assistant work using cross-country datasets, difference-in-differences,
+            and GVAR-related data preparation.
           </p>
         </Link>
       </div>

@@ -1,82 +1,80 @@
 import ProjectLayout from "@/app/components/ProjectLayout";
 import Section from "@/app/components/Section";
+import BackLink from "@/app/components/BackLink";
 
 export default function HomeBaseProjectPage() {
   return (
     <ProjectLayout
       title="HomeBase: Full-Stack Roommate Coordination App"
-      subtitle="Forge Software Product Lab — a full-stack app that centralizes chores, bills, shared calendars, and shopping lists for roommate groups."
+      subtitle="Forge Software Product Lab — a full-stack app for coordinating chores, bills, calendars, and shared shopping."
       tags={["React", "Next.js", "FastAPI", "PostgreSQL", "Docker", "JWT"]}
     >
+      <BackLink href="/projects" label="← Back to Projects" />
+
       <Section title="Context">
         <p>
           I worked on an 8-person team in Northeastern’s Forge Software Product Lab to
-          design and build a user-tested product with real feature requirements and
-          iterative development cycles.
+          design and build a real, user-tested product through iterative development.
         </p>
       </Section>
 
       <Section title="Problem">
         <p>
-          Roommate coordination usually happens across scattered tools (texts, notes,
-          Venmo, calendars), which makes it easy to miss chores, forget payments, or
-          lose track of who is responsible for what.
+          Roommate coordination is often fragmented across texts, calendars, and
+          payment apps, making responsibilities easy to miss.
         </p>
       </Section>
 
       <Section title="My Role">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Built frontend pages using React and Next.js.</li>
+          <li>Developed frontend pages using React and Next.js.</li>
           <li>
-            Implemented backend API endpoints using Python and FastAPI, with Pydantic
-            validation.
+            Implemented backend API endpoints with Python and FastAPI, using Pydantic
+            for validation.
           </li>
-          <li>Integrated PostgreSQL for persistent storage.</li>
+          <li>Integrated PostgreSQL for persistent data storage.</li>
+          <li>Used Docker and JWT authentication.</li>
           <li>
-            Worked with Docker for local development consistency and JWT for
-            authentication.
-          </li>
-          <li>
-            Collaborated through Jira and GitHub, participating in design reviews and
-            iterative development.
+            Collaborated via Jira and GitHub with regular design reviews.
           </li>
         </ul>
       </Section>
 
-      <Section title="System Design (High Level)">
+      <Section title="System Design">
         <ul className="list-disc space-y-2 pl-5">
           <li>
-            <span className="font-medium">Frontend:</span> Next.js UI pages for chores,
-            bills, calendars, and lists.
+            <strong>Frontend:</strong> Next.js pages for user interaction
           </li>
           <li>
-            <span className="font-medium">Backend:</span> FastAPI service exposing
-            endpoints for CRUD operations.
+            <strong>Backend:</strong> FastAPI services for CRUD operations
           </li>
           <li>
-            <span className="font-medium">Database:</span> PostgreSQL storing users,
-            groups, and shared items.
+            <strong>Database:</strong> PostgreSQL relational storage
           </li>
           <li>
-            <span className="font-medium">Auth:</span> JWT-based authentication to keep
-            user/group data secure.
+            <strong>Auth:</strong> JWT-based user authentication
           </li>
         </ul>
       </Section>
 
       <Section title="Outcome">
         <p>
-          Delivered user-facing features as part of an iterative development process,
-          contributing to a centralized platform that supports real-time coordination
-          across roommate groups.
+          Delivered functional features as part of a cohesive system supporting
+          real-time roommate coordination.
         </p>
+      </Section>
+
+      <Section title="Artifacts">
+        <ul className="list-disc space-y-2 pl-5">
+          <li>Private team repository (available upon request)</li>
+          <li>Architecture overview included above</li>
+        </ul>
       </Section>
 
       <Section title="What I Learned">
         <p>
-          Building full-stack systems taught me how frontend, backend, and database
-          layers interact — and how small interface decisions (data shape, validation,
-          auth) affect reliability across the entire product.
+          Interface decisions between frontend, backend, and data layers determine
+          system reliability.
         </p>
       </Section>
     </ProjectLayout>

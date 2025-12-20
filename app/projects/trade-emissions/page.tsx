@@ -1,66 +1,70 @@
-import Link from "next/link";
 import ProjectLayout from "@/app/components/ProjectLayout";
 import Section from "@/app/components/Section";
+import BackLink from "@/app/components/BackLink";
 
 export default function TradeEmissionsProjectPage() {
   return (
     <ProjectLayout
       title="Trade Wars, Emissions, and Global Data Analysis"
       subtitle="Research Assistant — Northeastern University London (Economics Department)"
-      tags={["Data analysis", "Econometrics", "DiD", "GVAR", "Data organization"]}
+      tags={[
+        "Data analysis",
+        "Econometrics",
+        "Difference-in-differences",
+        "GVAR",
+        "Data cleaning",
+      ]}
     >
-      {/* Nice UX: a simple “back” link */}
-      <div>
-        <Link href="/projects" className="text-sm underline">
-          ← Back to Projects
-        </Link>
-      </div>
+      <BackLink href="/projects" label="← Back to Projects" />
 
       <Section title="Context">
         <p>
           I assisted research examining how U.S.-initiated trade wars affected global
-          trade patterns and environmental outcomes, using cross-country datasets and
-          empirical methods.
+          trade patterns and environmental outcomes using cross-country datasets.
         </p>
       </Section>
 
       <Section title="Problem">
         <p>
-          The analysis required structuring messy real-world datasets and using methods
-          designed to isolate policy-driven effects from broader global trends.
+          Real-world economic data is messy and confounded, requiring careful structure
+          and assumptions to isolate causal effects.
         </p>
       </Section>
 
       <Section title="My Role">
         <ul className="list-disc space-y-2 pl-5">
           <li>
-            Collected and organized emissions data, trade distances, and environmental
-            regulations to evaluate cross-country impacts.
+            Collected and organized emissions, trade distance, and regulatory datasets.
           </li>
           <li>
-            Contributed to econometric modeling support, including difference-in-differences
-            (DiD), and assisted a literature review on carbon leakage and the Pollution Haven
-            Hypothesis.
+            Supported econometric modeling, including difference-in-differences
+            analysis.
           </li>
           <li>
-            Compiled and organized financial data for Global Vector Autoregression (GVAR)
-            analysis workflows.
+            Compiled financial data for Global Vector Autoregression (GVAR) workflows.
           </li>
         </ul>
       </Section>
 
       <Section title="Tools & Skills">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Data cleaning and structure design for analysis</li>
-          <li>Quantitative reasoning and causal inference concepts</li>
-          <li>Documentation and reproducible research habits</li>
+          <li>Data cleaning and structuring</li>
+          <li>Quantitative reasoning and causal inference</li>
+          <li>Reproducible research practices</li>
+        </ul>
+      </Section>
+
+      <Section title="Artifacts">
+        <ul className="list-disc space-y-2 pl-5">
+          <li>Method summaries (DiD and GVAR)</li>
+          <li>Research notes available upon request</li>
         </ul>
       </Section>
 
       <Section title="What I Learned">
         <p>
-          Real outcomes depend heavily on correct assumptions and clean interfaces between
-          data, models, and interpretation — the same mindset I apply to engineering systems.
+          Reliable conclusions require clean interfaces between data, models, and
+          interpretation — just like engineering systems.
         </p>
       </Section>
     </ProjectLayout>
