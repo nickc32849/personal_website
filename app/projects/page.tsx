@@ -1,4 +1,25 @@
-import Link from "next/link";
+import ProjectCard from "@/app/components/ProjectCard";
+
+const projects = [
+  {
+    href: "/projects/nasa",
+    title: "NASA Small Satellite Subsystem Matching Platform",
+    description:
+      "Reorganized spacecraft technology datasets into retrieval categories and supported platform integration.",
+  },
+  {
+    href: "/projects/homebase",
+    title: "HomeBase: Full-Stack Roommate Coordination App",
+    description:
+      "Built features across the stack with Next.js, FastAPI, PostgreSQL, Docker, and JWT authentication.",
+  },
+  {
+    href: "/projects/trade-emissions",
+    title: "Trade Wars, Emissions, and Global Data Analysis",
+    description:
+      "Research assistant work using cross-country datasets, difference-in-differences, and GVAR-related data preparation.",
+  },
+];
 
 export default function ProjectsPage() {
   return (
@@ -11,44 +32,14 @@ export default function ProjectsPage() {
       </header>
 
       <div className="mt-6 space-y-4">
-        <Link
-          href="/projects/nasa"
-          className="block rounded-lg border p-4 hover:bg-gray-50"
-        >
-          <h2 className="text-lg font-semibold">
-            NASA Small Satellite Subsystem Matching Platform
-          </h2>
-          <p className="text-sm">
-            Reorganized spacecraft technology datasets into retrieval categories and
-            supported platform integration.
-          </p>
-        </Link>
-
-        <Link
-          href="/projects/homebase"
-          className="block rounded-lg border p-4 hover:bg-gray-50"
-        >
-          <h2 className="text-lg font-semibold">
-            HomeBase: Full-Stack Roommate Coordination App
-          </h2>
-          <p className="text-sm">
-            Built features across the stack with Next.js, FastAPI, PostgreSQL, Docker,
-            and JWT authentication.
-          </p>
-        </Link>
-
-        <Link
-          href="/projects/trade-emissions"
-          className="block rounded-lg border p-4 hover:bg-gray-50"
-        >
-          <h2 className="text-lg font-semibold">
-            Trade Wars, Emissions, and Global Data Analysis
-          </h2>
-          <p className="text-sm">
-            Research assistant work using cross-country datasets, difference-in-differences,
-            and GVAR-related data preparation.
-          </p>
-        </Link>
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.href}
+            href={project.href}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
     </main>
   );
