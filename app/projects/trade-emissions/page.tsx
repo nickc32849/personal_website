@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectLayout from "@/app/components/ProjectLayout";
 import Section from "@/app/components/Section";
 
@@ -6,8 +7,15 @@ export default function TradeEmissionsProjectPage() {
     <ProjectLayout
       title="Trade Wars, Emissions, and Global Data Analysis"
       subtitle="Research Assistant — Northeastern University London (Economics Department)"
-      tags={["Data analysis", "Econometrics", "Difference-in-differences", "GVAR", "Excel"]}
+      tags={["Data analysis", "Econometrics", "DiD", "GVAR", "Data organization"]}
     >
+      {/* Nice UX: a simple “back” link */}
+      <div>
+        <Link href="/projects" className="text-sm underline">
+          ← Back to Projects
+        </Link>
+      </div>
+
       <Section title="Context">
         <p>
           I assisted research examining how U.S.-initiated trade wars affected global
@@ -18,9 +26,8 @@ export default function TradeEmissionsProjectPage() {
 
       <Section title="Problem">
         <p>
-          Global trade and environmental outcomes are influenced by multiple confounding
-          factors. The project required carefully structured datasets and methods to
-          isolate policy-driven effects (e.g., trade restrictions) from broader trends.
+          The analysis required structuring messy real-world datasets and using methods
+          designed to isolate policy-driven effects from broader global trends.
         </p>
       </Section>
 
@@ -31,30 +38,29 @@ export default function TradeEmissionsProjectPage() {
             regulations to evaluate cross-country impacts.
           </li>
           <li>
-            Contributed to econometric modeling, including supporting a
-            difference-in-differences analysis and literature review on carbon leakage
-            and the Pollution Haven Hypothesis.
+            Contributed to econometric modeling support, including difference-in-differences
+            (DiD), and assisted a literature review on carbon leakage and the Pollution Haven
+            Hypothesis.
           </li>
           <li>
-            Compiled and organized financial data for Global Vector Autoregression
-            (GVAR) analysis.
+            Compiled and organized financial data for Global Vector Autoregression (GVAR)
+            analysis workflows.
           </li>
         </ul>
       </Section>
 
       <Section title="Tools & Skills">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Data cleaning and structuring for analysis</li>
+          <li>Data cleaning and structure design for analysis</li>
           <li>Quantitative reasoning and causal inference concepts</li>
-          <li>Research workflows: documentation, reproducibility, and review</li>
+          <li>Documentation and reproducible research habits</li>
         </ul>
       </Section>
 
       <Section title="What I Learned">
         <p>
-          Working with large real-world datasets reinforced the importance of careful
-          data structure, assumptions, and validation — the same mindset required when
-          designing reliable engineering systems.
+          Real outcomes depend heavily on correct assumptions and clean interfaces between
+          data, models, and interpretation — the same mindset I apply to engineering systems.
         </p>
       </Section>
     </ProjectLayout>
