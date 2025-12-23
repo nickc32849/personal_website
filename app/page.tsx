@@ -3,6 +3,9 @@ import ProjectCard from "@/app/components/ProjectCard";
 import { projects } from "@/app/data/projects";
 
 export default function HomePage() {
+  const featuredSlugs = ["whack-a-mole", "nasa"];
+  const featuredProjects = projects.filter((p) => featuredSlugs.includes(p.slug));
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 space-y-12">
       {/* Hero */}
@@ -13,13 +16,20 @@ export default function HomePage() {
           hardware–software integration, and applied problem-solving.
         </p>
 
-        <div className="flex gap-4 pt-2">
+        <div className="flex flex-wrap gap-4 pt-2">
           <Link href="/projects" className="underline">
-            View Projects
+            Projects
+          </Link>
+          <Link href="/about" className="underline">
+            About
           </Link>
           <Link href="/contact" className="underline">
             Contact
           </Link>
+          {/* Optional: add this once you create /resume */}
+          {/* <Link href="/resume" className="underline">
+            Resume
+          </Link> */}
         </div>
       </section>
 
@@ -28,7 +38,7 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold">Featured Projects</h2>
 
         <div className="space-y-4">
-          {projects.slice(0, 2).map((project) => (
+          {featuredProjects.map((project) => (
             <ProjectCard
               key={project.slug}
               href={`/projects/${project.slug}`}
