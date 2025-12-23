@@ -63,6 +63,14 @@ export default function HuskyStartupChallengePage() {
         </ul>
       </Section>
 
+      <Section title="Validation">
+        <p>
+          This project was a concept-stage pitch. The work emphasized structured problem
+          definition, system-level solution design, and scalability analysis under competition
+          constraints, rather than deploying a production system.
+        </p>
+      </Section>
+
       <Section title="My Role">
         <p>
           I contributed to system-level concept design and pitch development, focusing on
