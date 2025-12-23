@@ -5,7 +5,10 @@ export default function Navbar() {
     <nav className="w-full">
       <div className="mx-auto max-w-3xl px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="font-semibold tracking-tight hover:opacity-80">
+          <Link
+            href="/"
+            className="font-semibold tracking-tight hover:opacity-80 transition-opacity"
+          >
             Nick Carpenter
           </Link>
 
