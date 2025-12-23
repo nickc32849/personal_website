@@ -25,13 +25,14 @@ export default function ContactPage() {
           <h2 className="text-xl font-semibold">LinkedIn</h2>
           <a
             className="underline"
-            href="www.linkedin.com/in/nicholas-carpenter-083649326"
+            href="https://www.linkedin.com/in/nicholas-carpenter-083649326"
             target="_blank"
             rel="noreferrer"
           >
             Connect on LinkedIn
           </a>
         </div>
+
 
         <div className="pt-2">
           <Link href="/projects" className="underline text-sm">
