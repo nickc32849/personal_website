@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ProjectLayout from "@/app/components/ProjectLayout";
 import Section from "@/app/components/Section";
 import BackLink from "@/app/components/BackLink";
@@ -26,82 +27,86 @@ export default function HuskyStartupChallengePage() {
         </p>
       </Section>
 
+      <Section title="Pitch Slide">
+        <div className="space-y-3">
+          <Image
+            src="/images/sustainafill-solution.png"
+            alt="SustainaFill solution slide from Demo Day pitch deck"
+            width={1200}
+            height={675}
+            className="rounded-lg border"
+          />
+          <p className="text-sm">
+            Demo Day slide: proposed app concept and feature set.
+          </p>
+        </div>
+      </Section>
+
       <Section title="Problem">
         <p>
-          Despite the presence of water refill stations on many campuses, students often
-          lack awareness and convenient access. According to research presented in the
-          pitch, over <strong>3 million single-use plastic bottles</strong> are used
-          annually on a typical campus, while <strong>80% end up as litter</strong> .
+          Despite refill stations existing on many campuses, awareness and usage are still
+          low — leading to excessive single-use bottle consumption and missed opportunities
+          for sustainability impact.
         </p>
       </Section>
 
       <Section title="Proposed Solution">
         <p>
-          SustainaFill proposed a mobile application designed to bridge the gap between
-          existing refill infrastructure and student behavior by improving visibility,
-          accessibility, and engagement.
+          A mobile app that improves the visibility and convenience of refill stations,
+          encourages hydration habits, and provides usage insights for campuses.
         </p>
         <ul className="list-disc space-y-2 pl-5">
-          <li>Real-time mapping of campus refill stations using GPS</li>
-          <li>Hydration reminders and proximity-based notifications</li>
-          <li>Campus system integration (e.g., student ID data)</li>
-          <li>Usage analytics for university administrators</li>
+          <li>Map-based discovery of refill stations (GPS)</li>
+          <li>Hydration reminders and proximity nudges</li>
+          <li>Campus integration (IDs / events / challenges)</li>
+          <li>Analytics for administrators to improve infrastructure placement</li>
         </ul>
       </Section>
 
       <Section title="My Role">
         <p>
-          I contributed to the overall system design and pitch development, helping frame
-          the problem, solution architecture, and value proposition. I focused on ensuring
-          the concept was technically feasible, scalable, and clearly communicated to a
-          mixed technical and non-technical audience.
-        </p>
-      </Section>
-
-      <Section title="Market & Business Model">
-        <p>
-          The pitch included a structured market analysis showing applicability across
-          more than <strong>4,000 U.S. colleges and universities</strong>, with tiered
-          annual licensing for institutions based on enrollment size .
-        </p>
-        <ul className="list-disc space-y-2 pl-5">
-          <li>Annual university licensing fees</li>
-          <li>Sponsored sustainability challenges and partnerships</li>
-          <li>Aggregated, anonymized data insights for researchers and policymakers</li>
-        </ul>
-      </Section>
-
-      <Section title="Scalability & Systems Thinking">
-        <p>
-          SustainaFill was designed as a modular, cloud-based system that could scale
-          across campuses. The pitch emphasized how data collected from app usage could
-          inform infrastructure placement and drive continuous improvement .
+          I contributed to system-level concept design and pitch development, focusing on
+          feasibility, scalability, and communicating the idea clearly to a mixed audience.
         </p>
       </Section>
 
       <Section title="Outcome">
         <p>
-          The project placed <strong>second overall</strong> in the Husky Startup
-          Challenge. Judges highlighted the clarity of the problem framing, the
-          feasibility of the solution, and the scalability of the proposed system.
+          The project placed <strong>2nd overall</strong> in the Husky Startup Challenge.
         </p>
+      </Section>
+
+      <Section title="What I’d Build Differently Now">
+        <ul className="list-disc space-y-2 pl-5">
+          <li>
+            <strong>Start with a tighter MVP:</strong> map + verified locations + one
+            engagement loop (e.g., streaks or campus challenge). Ship fast, then expand.
+          </li>
+          <li>
+            <strong>Prove behavior change:</strong> run a 2–4 week pilot with a single
+            dorm/community and measure refill frequency + retention, not just downloads.
+          </li>
+          <li>
+            <strong>Make data trustworthy:</strong> build a verification workflow (student
+            submissions + admin approval) so station accuracy stays high.
+          </li>
+          <li>
+            <strong>Design for privacy early:</strong> keep analytics anonymized by default,
+            with clear opt-in for anything sensitive.
+          </li>
+          <li>
+            <strong>Integrate with campus operations:</strong> align incentives with facilities
+            teams (maintenance reporting, station downtime flags) so the app stays useful long-term.
+          </li>
+        </ul>
       </Section>
 
       <Section title="Artifacts">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Demo Day pitch deck (available upon request)</li>
-          <li>Market research and cost modeling slides</li>
-          <li>Live pitch presentation at NU Oakland</li>
+          <li>Demo Day pitch deck (PDF)</li>
+          <li>Market sizing + pricing model slides</li>
+          <li>Competition result: 2nd place</li>
         </ul>
-      </Section>
-
-      <Section title="What I Learned">
-        <p>
-          This experience strengthened my ability to translate technical and systems-level
-          ideas into clear value propositions. Designing the pitch required balancing
-          feasibility, scalability, and user behavior — a mindset that directly applies
-          to engineering system design.
-        </p>
       </Section>
     </ProjectLayout>
   );
