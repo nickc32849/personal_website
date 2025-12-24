@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
+            className="text-2xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
           >
             Nick Carpenter
           </Link>
