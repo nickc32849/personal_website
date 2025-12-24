@@ -15,19 +15,19 @@ export default function Navbar() {
           <div className="flex items-center gap-6 text-sm">
             <Link
               href="/projects"
-              className="underline underline-offset-4 hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity"
             >
               Projects
             </Link>
             <Link
               href="/about"
-              className="underline underline-offset-4 hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="underline underline-offset-4 hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity"
             >
               Contact
             </Link>
