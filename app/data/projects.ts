@@ -7,7 +7,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "whack-a-mole",
-    title: "Whack-a-Mole: Cornerstone Engineering Group Project",
+    title: "Whack-a-Mole Game",
     description:
       "Built an interactive whack-a-mole style system as a team project, integrating hardware, software, and iterative testing.",
   },
