@@ -152,11 +152,16 @@ export default function WhackAMolePage() {
           However, strong team communication and mutual support helped us overcome each obstacle.
         </p>
 
-        <p className="mt-4">
+        <p className="mt-6 italic text-gray-400">
+          Academic Course Project — Northeastern University
+        </p>
+
+        <p className="mt-2">
           This project was completed as part of the Cornerstone of Engineering 1 (GE 1501)
           Carnival/Arcade Game group project, where students designed, prototyped, and built fully
           functional carnival games from scratch.
         </p>
+
       </Section>
     </ProjectLayout>
   );
