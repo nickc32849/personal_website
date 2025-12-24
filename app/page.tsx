@@ -10,20 +10,19 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 space-y-12">
       {/* Hero */}
-      <section className="space-y-3">
-        <p className="text-sm uppercase tracking-wide text-gray-400">
-          Hello!
-        </p>
+      <section className="space-y-2">
+        <h1 className="text-4xl font-semibold">Hello!</h1>
 
         <h1 className="text-4xl font-semibold">
           I&apos;m Nick Carpenter
         </h1>
 
-        <p className="text-lg">
+        <p className="text-lg pt-2">
           I&apos;m an Electrical Engineering student at Northeastern interested in embedded
           systems, hardware–software integration, and applied problem-solving.
         </p>
       </section>
+
 
       {/* Featured Projects */}
       <section className="space-y-4">
