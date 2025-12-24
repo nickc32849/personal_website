@@ -13,12 +13,12 @@ export default function ContactPage() {
       <section className="mt-10 space-y-8">
         <div className="space-y-2">
           <h2 className="text-xl font-semibold">Email</h2>
-          <a className="underline" href="mailto:carpenter.ni@northeastern.edu">
+          <a
+            href="mailto:carpenter.ni@northeastern.edu"
+            className="hover:opacity-80 transition-opacity"
+          >
             carpenter.ni@northeastern.edu
           </a>
-          <p className="text-sm">
-            Include “Co-op” in the subject if you’re reaching out about roles.
-          </p>
         </div>
 
         <div className="space-y-2">
