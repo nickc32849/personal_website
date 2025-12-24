@@ -6,7 +6,7 @@ import BackLink from "@/app/components/BackLink";
 export default function WhackAMolePage() {
   return (
     <ProjectLayout
-      title="Whack-a-Mole: Cornerstone Engineering Group Project"
+      title="Whack-a-Mole Arcade Game"
       subtitle="Cornerstone of Engineering 1 (GE 1501) • Northeastern University"
       tags={[
         "Raspberry Pi Pico",
