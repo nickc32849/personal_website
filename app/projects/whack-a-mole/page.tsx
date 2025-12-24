@@ -12,9 +12,10 @@ export default function WhackAMolePage() {
         "Raspberry Pi Pico",
         "MicroPython",
         "Embedded systems",
-        "Power management",
-        "Hardware–software integration",
-        "Team project",
+        "Circuit Design",
+        "Power Management",
+        "Hardware–Software Integration",
+        "Team Project",
       ]}
     >
       <BackLink href="/projects" label="← Back to Projects" />
