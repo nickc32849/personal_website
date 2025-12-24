@@ -9,7 +9,7 @@ export const projects: Project[] = [
     slug: "whack-a-mole",
     title: "Whack-a-Mole Game",
     description:
-      "Built an interactive whack-a-mole style system as a team project, integrating hardware, software, and iterative testing.",
+      'Built an interactive "Whack-a-Mole"-style system as a team project, integrating hardware, software, and iterative testing.',
   },
   {
     slug: "husky-startup-challenge",
