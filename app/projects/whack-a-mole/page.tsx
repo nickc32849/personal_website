@@ -12,9 +12,9 @@ export default function WhackAMolePage() {
         "Raspberry Pi Pico",
         "MicroPython",
         "Embedded systems",
-        "Servo control",
         "Power management",
         "Hardware–software integration",
+        "Team project"
       ]}
     >
       <BackLink href="/projects" label="← Back to Projects" />
@@ -153,7 +153,7 @@ export default function WhackAMolePage() {
         </p>
 
         <hr className="mt-8 mb-4 border-gray-700" />
-        
+
         <p className="italic">
           This project was completed as part of the Cornerstone of Engineering 1 (GE 1501)
           Carnival/Arcade Game group project, where students designed, prototyped, and built fully
