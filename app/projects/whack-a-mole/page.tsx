@@ -11,7 +11,7 @@ export default function WhackAMolePage() {
       tags={[
         "Raspberry Pi Pico",
         "MicroPython",
-        "Embedded systems",
+        "Embedded Systems",
         "Circuit Design",
         "Power Management",
         "Hardware–Software Integration",
