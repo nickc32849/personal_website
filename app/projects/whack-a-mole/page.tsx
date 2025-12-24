@@ -14,7 +14,7 @@ export default function WhackAMolePage() {
         "Embedded systems",
         "Power management",
         "Hardware–software integration",
-        "Team project"
+        "Team project",
       ]}
     >
       <BackLink href="/projects" label="← Back to Projects" />
