@@ -6,13 +6,12 @@ import BackLink from "@/app/components/BackLink";
 export default function WhackAMolePage() {
   return (
     <ProjectLayout
-      title="Whack-a-Mole Game"
+      title="Whack-a-Mole Arcade Game"
       subtitle="Cornerstone of Engineering 1 (GE 1501) • Northeastern University"
       tags={[
         "Raspberry Pi Pico",
         "MicroPython",
         "Embedded Systems",
-        "Circuit Design",
         "Power Management",
         "Hardware–Software Integration",
         "Team Project",
@@ -20,21 +19,35 @@ export default function WhackAMolePage() {
     >
       <BackLink href="/projects" label="← Back to Projects" />
 
-      <Section title="Project Overview">
+      <Section title="">
         <p>
-          For Northeastern’s first-year engineering course, my team designed and built a fully
-          functional Whack-a-Mole game for a carnival/arcade-themed project for a public expo. The
-          game features three randomly popping moles controlled by a Raspberry Pi Pico, challenging
-          players to test their reflexes within a 30-second time limit.
-        </p>
-        <p className="mt-4">
-          The game was designed to be fast-paced, visually engaging, portable, and winnable,
-          meeting all engineering and gameplay constraints set by the course.
+          For Northeastern University’s first-year engineering course, I led the electronics and
+          scoring logic for a fully functional Whack-a-Mole arcade game built for a public expo.
+          The system used a Raspberry Pi Pico (running MicroPython) to coordinate three servo-driven
+          moles, real-time button-based hit detection, and an LCD score display within a 30-second
+          game loop. I implemented state-based logic to prevent false scoring, integrated power and
+          wiring for multiple servos and an LCD, and resolved power-delivery failures by redesigning
+          the system with external battery packs. The game ran reliably throughout the expo and was
+          praised for its fast-paced, competitive gameplay, demonstrating hands-on experience with
+          embedded systems, hardware–software integration, and real-world debugging.
         </p>
       </Section>
 
-      {/* Team Photo (kept in the most natural spot: after overview) */}
-      <Section title="Team">
+      <Section title="Project Overview">
+        <p>
+          For Northeastern University’s first-year engineering course, my team designed and built a
+          fully functional Whack-a-Mole arcade game for a public expo. The system uses a Raspberry
+          Pi Pico to control three randomly actuated moles, challenging players to test their
+          reflexes within a 30-second time limit.
+        </p>
+        <p className="mt-4">
+          The game was intentionally designed to be fast-paced, visually engaging, portable, and
+          winnable, satisfying both technical and gameplay constraints.
+        </p>
+      </Section>
+
+      {/* Team Photo — best placement: after overview */}
+      <Section title="Team Photo">
         <div className="space-y-3">
           <Image
             src="/images/whack-a-mole-team.png"
@@ -43,77 +56,80 @@ export default function WhackAMolePage() {
             height={800}
             className="rounded-lg border"
           />
-          <p className="text-sm">Whack-a-Mole project team at the Cornerstone Engineering Expo.</p>
         </div>
       </Section>
 
       <Section title="Game Mechanics">
-        <p>
-          Players have 30 seconds to score as many points as possible by hitting the correct button
-          when its corresponding mole pops up. Each successful hit adds 1 point to the score, which
-          is displayed in real time on an LCD screen. The game features a tiered reward system:
-        </p>
-        <ul className="list-disc space-y-2 pl-5 mt-4">
-          <li>🥇 Gold Tier: 18+ points</li>
-          <li>🥈 Silver Tier: 13-17 points</li>
-          <li>🥉 Bronze Tier: 8-12 points</li>
+        <ul className="list-disc space-y-2 pl-5">
+          <li>Players have 30 seconds to score as many points as possible</li>
+          <li>
+            A point is awarded only when the correct button is pressed while its corresponding mole
+            is raised
+          </li>
+          <li>Scores are displayed in real time on an LCD</li>
+          <li>
+            Tiered reward structure encourages competition and replayability:
+            <ul className="list-disc space-y-1 pl-5 mt-2">
+              <li>🥇 Gold: 18+ points</li>
+              <li>🥈 Silver: 13–17 points</li>
+              <li>🥉 Bronze: 8–12 points</li>
+            </ul>
+          </li>
         </ul>
       </Section>
 
       <Section title="System Overview">
         <ul className="list-disc space-y-2 pl-5">
-          <li>Controller: Raspberry Pi Pico running MicroPython</li>
-          <li>Actuation: Three servo motors controlling pop-up moles</li>
-          <li>Inputs: Three physical player buttons (one per mole)</li>
-          <li>Outputs: LCD score display and visual game feedback</li>
-          <li>Game Logic: Timed 30-second game with tiered scoring</li>
+          <li>Controller: Raspberry Pi Pico (MicroPython)</li>
+          <li>Actuation: Three servo motors driving pop-up moles</li>
+          <li>Inputs: Three physical buttons (one per mole)</li>
+          <li>Outputs: LCD score display and visual feedback</li>
+          <li>Game Logic: Timed round with tiered scoring</li>
         </ul>
       </Section>
 
-      <Section title="My Role">
+      <Section title="My Role — Electronics & Scoring Logic">
         <p>
-          I was responsible for the electronics and scoring logic, focusing on reliable hit
-          detection and feedback.
+          I led the electronics architecture and scoring logic, focusing on accurate hit detection
+          and real-time feedback.
         </p>
-        <p className="mt-4">Specifically, I:</p>
+
+        <p className="mt-4 font-semibold">Key contributions:</p>
         <ul className="list-disc space-y-2 pl-5 mt-2">
+          <li>Programmed the Pico to register button presses only when the correct mole was active</li>
+          <li>Coordinated hit detection across three independent servo motors and buttons</li>
           <li>
-            Programmed the Raspberry Pi Pico to detect button presses only when the corresponding
-            mole was active.
+            Debugged power failures when the Pico could not reliably drive multiple servo motors and
+            an LCD
           </li>
-          <li>Coordinated hit detection across three independent servo motors and buttons.</li>
-          <li>
-            Debugged power failures after the Pico could not reliably drive multiple servo motors
-            and the LCD simultaneously.
-          </li>
-          <li>Implemented the LCD live score display system throughout the game.</li>
-          <li>Integrated wiring and power distribution for all electronic components.</li>
+          <li>Implemented a live LCD score display</li>
+          <li>Integrated and organized wiring and power distribution across all electronic components</li>
         </ul>
+
         <p className="mt-4">
-          This required careful coordination between hardware, software, and physical constraints.
+          This work required tight coordination between software logic, hardware behavior, and
+          physical constraints.
         </p>
       </Section>
 
       <Section title="Technical Challenges">
         <ul className="list-disc space-y-2 pl-5">
           <li>
-            <strong>Hit Detection Logic:</strong> Developed a system to accurately detect button
-            presses only when the corresponding mole was up, not when down or when a different mole
-            was active.
+            <strong>Hit Detection Logic:</strong> Implemented state-based logic to prevent false
+            scoring when moles were down or mismatched buttons were pressed.
           </li>
           <li>
-            <strong>Integrating 3 Servo Motors:</strong> Required precise angle calibration through
-            iterative testing.
+            <strong>Servo Motor Integration:</strong> Required precise angle calibration through
+            iterative testing to align mechanical motion with the enclosure.
           </li>
           <li>
-            <strong>Power Management:</strong> Debugged power failures after the Pico could not
-            reliably drive the three servo motors and the LCD simultaneously. Implemented two
-            battery packs.
+            <strong>Power Management:</strong> The Pico alone could not support three servos and an
+            LCD; resolved by introducing two external battery packs.
           </li>
           <li>
-            <strong>Wiring Complexity:</strong> Managed breadboard connections for three servo
-            motors, three buttons, an LCD, and two battery packs. Troubleshooting was challenging
-            with components mounted under the game box.
+            <strong>Wiring Complexity:</strong> Managed dense breadboard connections for servos,
+            buttons, LCD, and power. Troubleshooting became significantly harder once components
+            were mounted beneath the enclosure.
           </li>
         </ul>
       </Section>
@@ -121,46 +137,49 @@ export default function WhackAMolePage() {
       <Section title="Design & Fabrication">
         <ul className="list-disc space-y-2 pl-5">
           <li>Laser-cut wooden enclosure</li>
-          <li>Spray-painted finish for stage presence</li>
+          <li>Spray-painted finish for strong stage presence</li>
           <li>Vinyl-cut labels and visuals</li>
-          <li>Breadboard-based electronics mounted inside the enclosure</li>
-          <li>Fully portable: one person can carry the entire system</li>
+          <li>Breadboard-based electronics mounted internally</li>
+          <li>Fully portable — one person can carry the entire system</li>
         </ul>
       </Section>
 
       <Section title="Results & Reception">
         <p>
-          The game was a hit at the FYE Expo. Players consistently commented on its visual appeal
-          and engaging gameplay. The 30-second timer and competitive scoring tiers created a fun
-          atmosphere, with groups competing to achieve the highest scores. Only two players reached
-          the impressive score of 19 points during the event.
+          The game ran reliably throughout the First-Year Engineering Expo and was consistently
+          praised for its visual appeal and engaging gameplay. The short timer and competitive
+          scoring tiers created a high-energy atmosphere, with groups actively competing for top
+          scores. Only two players reached the peak score of 19, reinforcing that the game was
+          challenging but fair.
         </p>
       </Section>
 
       <Section title="Key Takeaways">
-        <p>This project taught me:</p>
-        <ul className="list-disc space-y-2 pl-5 mt-2">
-          <li>Practical experience with Raspberry Pi Pico and MicroPython programming</li>
-          <li>Circuit integration and power management for multi-component systems</li>
-          <li>The importance of iterative testing and design flexibility</li>
-          <li>Effective team collaboration and communication under deadline pressure</li>
-          <li>How to debug hardware-software integration issues</li>
+        <ul className="list-disc space-y-2 pl-5">
+          <li>Embedded programming using Raspberry Pi Pico and MicroPython</li>
+          <li>Power management for multi-component electronic systems</li>
+          <li>Hardware–software integration and debugging</li>
+          <li>Iterative testing under real-world constraints</li>
+          <li>Collaborative engineering under deadline pressure</li>
         </ul>
 
         <p className="mt-4">
-          Looking back, I would have allocated more buffer time in my schedule for unexpected
-          technical challenges, as debugging often took significantly longer than anticipated.
-          However, strong team communication and mutual support helped us overcome each obstacle.
+          In hindsight, I would allocate more buffer time for debugging, as hardware issues
+          consistently took longer than expected. That said, strong team communication and
+          coordination allowed us to overcome each obstacle efficiently.
         </p>
 
         <hr className="mt-8 mb-4 border-gray-700" />
 
         <p className="italic">
-          This project was completed as part of the Cornerstone of Engineering 1 (GE 1501)
-          Carnival/Arcade Game group project, where students designed, prototyped, and built fully
-          functional carnival games from scratch.
+          Team
+          <br />
+          4-person team with collaborative development across electronics, construction, and
+          fabrication
+          <br />
+          Completed as part of the Cornerstone of Engineering 1 (GE 1501) Carnival/Arcade Game group
+          project.
         </p>
-
       </Section>
     </ProjectLayout>
   );
