@@ -8,11 +8,10 @@ export default function HomeBaseProjectPage() {
         <h1 className="text-4xl font-semibold">HomeBase</h1>
 
         <p className="text-lg">
-          HomeBase is a full-stack roommate coordination system that consolidates
-          expenses, scheduling, chores, and shared lists into a single real-time
-          platform. Built with React, Next.js, FastAPI, and PostgreSQL, the project
-          emphasizes system architecture, authenticated data flow, and modular
-          subsystem integration.
+          HomeBase is a full-stack roommate coordination system that consolidates expenses,
+          scheduling, chores, and shared lists into a single real-time platform. Built with React,
+          Next.js, FastAPI, and PostgreSQL, the project emphasizes system architecture, authenticated
+          data flow, and modular subsystem integration.
         </p>
       </header>
 
@@ -30,10 +29,7 @@ export default function HomeBaseProjectPage() {
           "Full-Stack Systems",
           "Team Project",
         ].map((tag) => (
-          <span
-            key={tag}
-            className="rounded border border-neutral-600 px-2 py-1"
-          >
+          <span key={tag} className="rounded border border-neutral-600 px-2 py-1">
             {tag}
           </span>
         ))}
@@ -58,11 +54,10 @@ export default function HomeBaseProjectPage() {
         <h2 className="text-2xl font-semibold">Project Overview</h2>
 
         <p>
-          HomeBase is a comprehensive roommate coordination application designed to
-          eliminate the fragmentation problem of managing shared living spaces.
-          Instead of juggling multiple apps for expenses, scheduling, chores, and
-          communication, HomeBase provides a centralized, real-time platform where
-          roommates can manage all aspects of shared living coordination.
+          HomeBase is a comprehensive roommate coordination application designed to eliminate the
+          fragmentation problem of managing shared living spaces. Instead of juggling multiple apps
+          for expenses, scheduling, chores, and communication, HomeBase provides a centralized,
+          real-time platform where roommates can manage all aspects of shared living coordination.
         </p>
       </section>
 
@@ -83,9 +78,9 @@ export default function HomeBaseProjectPage() {
         <h2 className="text-2xl font-semibold">Solution</h2>
 
         <p>
-          HomeBase integrates core roommate coordination functions into a single,
-          synchronized application, providing consistent, real-time data visibility
-          across all users in a shared data environment.
+          HomeBase integrates core roommate coordination functions into a single, synchronized
+          application, providing consistent, real-time data visibility across all users in a shared
+          data environment.
         </p>
       </section>
 
@@ -165,10 +160,10 @@ export default function HomeBaseProjectPage() {
         <h2 className="text-2xl font-semibold">Development Process</h2>
 
         <p>
-          The project followed an agile development approach with iterative design
-          reviews. Comprehensive Figma prototypes were created before implementation
-          to align on UI/UX decisions. Two formal showcase events were held to present
-          progress and demonstrate functionality, allowing feedback-driven refinement.
+          The project followed an agile development approach with iterative design reviews.
+          Comprehensive Figma prototypes were created before implementation to align on UI/UX
+          decisions. Two formal showcase events were held to present progress and demonstrate
+          functionality, allowing feedback-driven refinement.
         </p>
       </section>
 
@@ -186,23 +181,24 @@ export default function HomeBaseProjectPage() {
         </ul>
       </section>
 
-      {/* Divider */}
-      <hr className="border-neutral-700" />
-
-      {/* Team */}
-      <section className="space-y-2">
+      {/* Team section ABOVE the divider */}
+      <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Team</h2>
 
         <p>
-          8-person software development team with collaborative development across
-          frontend, backend, and design.
-        </p>
-
-        <p className="italic text-neutral-300">
-          Completed as part of Forge: A Sherman Center Program Software Product Lab,
-          where students design and build full-stack applications from concept to deployment.
+          8-person software development team with collaborative development across frontend,
+          backend, and design.
         </p>
       </section>
+
+      {/* Divider below Team */}
+      <hr className="my-10 border-white/20" />
+
+      {/* Text below line */}
+      <p className="italic text-white">
+        Completed as part of Forge: A Sherman Center Program Software Product Lab, where students
+        design and build full-stack applications from concept to deployment.
+      </p>
     </main>
   );
 }
