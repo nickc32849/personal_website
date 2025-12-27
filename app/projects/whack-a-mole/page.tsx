@@ -6,7 +6,7 @@ import BackLink from "@/app/components/BackLink";
 export default function WhackAMolePage() {
   return (
     <ProjectLayout
-      title="Whack-a-Mole Arcade Game"
+      title="Whack-a-Mole Game"
       subtitle="Cornerstone of Engineering 1 (GE 1501) • Northeastern University"
       tags={[
         "Raspberry Pi Pico",
@@ -19,6 +19,7 @@ export default function WhackAMolePage() {
     >
       <BackLink href="/projects" label="← Back to Projects" />
 
+      {/* One-paragraph summary */}
       <Section title="">
         <p>
           For Northeastern University’s first-year engineering course, I led the electronics and
@@ -32,6 +33,9 @@ export default function WhackAMolePage() {
           embedded systems, hardware–software integration, and real-world debugging.
         </p>
       </Section>
+
+      {/* Divider between summary and rest of page */}
+      <hr className="my-12 border-gray-700" />
 
       <Section title="Project Overview">
         <p>
@@ -103,7 +107,9 @@ export default function WhackAMolePage() {
             an LCD
           </li>
           <li>Implemented a live LCD score display</li>
-          <li>Integrated and organized wiring and power distribution across all electronic components</li>
+          <li>
+            Integrated and organized wiring and power distribution across all electronic components
+          </li>
         </ul>
 
         <p className="mt-4">
@@ -168,19 +174,23 @@ export default function WhackAMolePage() {
           consistently took longer than expected. That said, strong team communication and
           coordination allowed us to overcome each obstacle efficiently.
         </p>
+      </Section>
 
-        <hr className="mt-8 mb-4 border-gray-700" />
-
-        <p className="italic">
-          Team
-          <br />
+      {/* Team section ABOVE the final divider */}
+      <Section title="Team">
+        <p>
           4-person team with collaborative development across electronics, construction, and
-          fabrication
-          <br />
-          Completed as part of the Cornerstone of Engineering 1 (GE 1501) Carnival/Arcade Game group
-          project.
+          fabrication.
         </p>
       </Section>
+
+      {/* Final divider + italic course context */}
+      <hr className="my-12 border-gray-700" />
+
+      <p className="italic">
+        Completed as part of the Cornerstone of Engineering 1 (GE 1501) Carnival/Arcade Game group
+        project.
+      </p>
     </ProjectLayout>
   );
 }
