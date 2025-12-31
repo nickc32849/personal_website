@@ -12,7 +12,7 @@ export const projects: Project[] = [
       'Built an interactive "Whack-a-Mole"-style system as a team project, integrating hardware, software, and iterative testing.',
   },
   {
-    slug: "husky-startup-challenge",
+    slug: "sustainafill",
     title: "SustainaFill — Husky Startup Challenge (2nd Place)",
     description:
       "Second-place startup pitch at Northeastern University Oakland proposing a campus-focused sustainability and hydration platform.",
