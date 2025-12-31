@@ -39,9 +39,8 @@ export default function SustainaFillPage() {
       <Section title="Pitch Visuals">
         <div className="space-y-3">
           <Image
-            // Update this path to match your actual image in /public
-            src="/images/sustainafill-montage.png"
-            alt="SustainaFill pitch visuals"
+            src="/images/sustainafill-solution.png"
+            alt="SustainaFill solution overview slide"
             width={1200}
             height={800}
             className="rounded-lg border"
