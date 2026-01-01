@@ -7,7 +7,18 @@ export default function NASAPage() {
     <ProjectLayout
       title="NASA — Small Spacecraft Systems Virtual Institute"
       subtitle="Aerospace Subsystem Matching • Data Engineering & Systems Integration"
+      tags={[
+        "NASA",
+        "Aerospace Systems",
+        "Small Satellites",
+        "Data Engineering",
+        "Systems Integration",
+        "Technical Research",
+        "Excel",
+        "Cross-Functional Collaboration",
+      ]}
     >
+
       <BackLink href="/projects" label="Back to Projects" />
 
       {/* Recruiter Skim */}
