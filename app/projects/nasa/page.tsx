@@ -192,7 +192,7 @@ export default function NASAPage() {
 
         <hr className="my-10 border-neutral-700" />
 
-        <p className="italic text-sm text-neutral-400">
+        <p className="italic">
           This was an unofficial, remote summer internship coordinated at NASA
           Ames Research Center, involving 14 Northeastern students working on
           collaborative aerospace data projects.
