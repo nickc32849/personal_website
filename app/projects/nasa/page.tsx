@@ -1,28 +1,16 @@
-// app/projects/nasa/page.tsx
-
 import ProjectLayout from "@/app/components/ProjectLayout";
 import Section from "@/app/components/Section";
 import BackLink from "@/app/components/BackLink";
 
-export default function NasaProjectPage() {
+export default function NASAPage() {
   return (
     <ProjectLayout
-      title="NASA — Small Spacecraft Systems Data Infrastructure"
-      subtitle="NASA Ames Research Center (S3VI) • Summer 2025"
-      tags={[
-        "NASA",
-        "Small Satellites",
-        "Spacecraft Subsystems",
-        "Data Engineering",
-        "Systems Engineering",
-        "Data Normalization",
-        "Excel",
-        "Cross-Functional Collaboration",
-      ]}
+      title="NASA — Small Spacecraft Systems Virtual Institute"
+      subtitle="Aerospace Subsystem Matching • Data Engineering & Systems Integration"
     >
       <BackLink href="/projects" label="Back to Projects" />
 
-      <Section title="Recruiter Skim">
+      <Section title="">
         <p>
           During Summer 2025, I worked with the NASA Small Spacecraft Systems
           Virtual Institute to transform NASA’s State-of-the-Art Small Spacecraft
@@ -44,18 +32,17 @@ export default function NasaProjectPage() {
       <Section title="Project Overview">
         <p>
           During Summer 2025, I worked with NASA&apos;s Small Spacecraft Systems
-          Virtual Institute to re-engineer how the aerospace industry accesses
-          the State-of-the-Art Small Spacecraft Technology Report, NASA&apos;s
-          annual catalog of flight-ready spacecraft technologies used by
-          universities, startups, and government agencies.
+          Virtual Institute to re-engineer how the aerospace industry accesses the
+          State-of-the-Art Small Spacecraft Technology Report, NASA&apos;s annual
+          catalog of flight-ready spacecraft technologies used by universities,
+          startups, and government agencies.
         </p>
         <p>
           The problem was not lack of data, but usability. The report contains
           hundreds of pages of high-value subsystem data, yet it is effectively
           unusable for real engineering decisions. My role focused on converting
-          this static document into structured, searchable, and interoperable
-          data that could directly support spacecraft design and subsystem
-          selection.
+          this static document into structured, searchable, and interoperable data
+          that could directly support spacecraft design and subsystem selection.
         </p>
       </Section>
 
@@ -75,22 +62,23 @@ export default function NasaProjectPage() {
       <Section title="Technical Contribution">
         <p>
           I worked on the Aerospace Subsystem Matching effort, a project
-          internally described as a “dating app for space parts.” The goal was
-          to allow users to input mission requirements and receive ranked,
+          internally described as a “dating app for space parts.” The goal was to
+          allow users to input mission requirements and receive ranked,
           compatibility-scored subsystem options derived directly from NASA’s
           official data.
         </p>
+      </Section>
+
+      <Section title="">
         <ul>
+          <li>Focus: Data engineering and systems integration</li>
           <li>
-            <strong>Focus:</strong> Data engineering and systems integration
+            Scope: Power, propulsion, communications, avionics, ADCS, thermal,
+            and structural systems
           </li>
           <li>
-            <strong>Scope:</strong> Power, propulsion, communications, avionics,
-            ADCS, thermal, and structural systems
-          </li>
-          <li>
-            <strong>Deliverable:</strong> Machine-readable schemas consumable by
-            software matching algorithms
+            Deliverable: Machine-readable schemas consumable by software matching
+            algorithms
           </li>
         </ul>
       </Section>
@@ -123,10 +111,10 @@ export default function NasaProjectPage() {
         </ul>
       </Section>
 
-      <Section title="Example Technical Challenge">
+      <Section title="Example Technical Challenge:">
         <p>
-          Chapters 2-7 used inconsistent vendor naming conventions (i.e., “Astro
-          Digital,” “Astro Digital US,” and “Astro Digital Inc.”) across different
+          Chapters 2-7 used inconsistent vendor naming conventions (i.e., "Astro
+          Digital," "Astro Digital US," and "Astro Digital Inc.") across different
           tables. Normalization rules were designed to consolidate entities
           without losing geographic or organizational distinctions, preventing
           duplicate entries that would skew compatibility rankings.
@@ -155,10 +143,9 @@ export default function NasaProjectPage() {
       </Section>
 
       <Section title="Key Takeaways">
-        <h3 className="mt-2 font-semibold">
-          Data Structuring and Normalization for Engineering Applications
-        </h3>
         <p>
+          <strong>Data Structuring and Normalization for Engineering Applications</strong>
+          <br />
           I developed the ability to convert unstructured, inconsistently
           formatted aerospace data into normalized schemas that support reliable
           filtering, comparison, and algorithmic matching. This required
@@ -166,10 +153,9 @@ export default function NasaProjectPage() {
           consumed programmatically without losing engineering meaning.
         </p>
 
-        <h3 className="mt-6 font-semibold">
-          Systems-Level Thinking Across Spacecraft Subsystems
-        </h3>
         <p>
+          <strong>Systems-Level Thinking Across Spacecraft Subsystems</strong>
+          <br />
           Working across power, propulsion, communications, avionics, ADCS,
           thermal, and structural systems reinforced architecture-level thinking
           rather than isolated component analysis. I gained an understanding of
@@ -177,10 +163,9 @@ export default function NasaProjectPage() {
           through an entire mission.
         </p>
 
-        <h3 className="mt-6 font-semibold">
-          Cross-Functional Collaboration with Software Teams
-        </h3>
         <p>
+          <strong>Cross-Functional Collaboration with Software Teams</strong>
+          <br />
           I collaborated directly with software developers to resolve schema
           mismatches, naming conflicts, and data-model assumptions impacting
           system integration. This required translating aerospace domain
@@ -188,29 +173,25 @@ export default function NasaProjectPage() {
           process.
         </p>
 
-        <h3 className="mt-6 font-semibold">
-          Translating Aerospace Engineering Data into Usable Technical Tools
-        </h3>
         <p>
+          <strong>Translating Aerospace Engineering Data into Usable Technical Tools</strong>
+          <br />
           I learned how to bridge dense engineering documentation and
           decision-support tools engineers can actually use. The work emphasized
           precision, traceability, and design intent over surface-level
           presentation.
         </p>
 
-        <h3 className="mt-6 font-semibold">
-          Operating Within Real NASA Constraints
-        </h3>
         <p>
+          <strong>Operating Within Real NASA Constraints</strong>
+          <br />
           All work was performed under real NASA constraints, including strict
           reliance on publicly available data, full traceability to source
           tables, and zero tolerance for misrepresentation. This reinforced the
           importance of accuracy, documentation discipline, and defensible
           engineering decisions in aerospace environments.
         </p>
-      </Section>
 
-      <Section title="Program Context">
         <p>
           This was an unofficial, remote summer internship coordinated through
           Dr. Craig Burkhard at NASA Ames Research Center, involving 14
