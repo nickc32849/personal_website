@@ -24,6 +24,9 @@ export default function TradeWarsEmissionsGlobalDataAnalysisPage() {
         and environmental spillovers.
       </p>
 
+      <hr className="my-8" />
+
+
       <Section title="The Challenge">
         <p>
           U.S.-initiated trade wars disrupted global supply chains, shifting production and
