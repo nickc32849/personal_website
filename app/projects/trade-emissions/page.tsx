@@ -7,10 +7,9 @@ export default function TradeWarsEmissionsGlobalDataAnalysisPage() {
     <ProjectLayout
       title="Trade Wars, Emissions, and Global Data Analysis"
       subtitle=""
-      date=""
       tags={[]}
     >
-      <BackLink />
+      <BackLink href="/projects" label="← Back to Projects" />
 
       <p>
         Collaborated with an economics professor and two student researchers on a global
