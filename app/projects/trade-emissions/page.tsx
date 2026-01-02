@@ -7,7 +7,17 @@ export default function TradeWarsEmissionsGlobalDataAnalysisPage() {
     <ProjectLayout
       title="Trade Wars, Emissions, and Global Data Analysis"
       subtitle=""
-      tags={[]}
+      tags={[
+        "Data Analysis",
+        "Econometrics",
+        "Research Collaboration",
+        "Excel",
+        "Statistical Modeling",
+        "Data Collection",
+        "Causal Inference",
+        "Financial Data",
+        "Environmental Economics"
+      ]}
     >
       <BackLink href="/projects" label="← Back to Projects" />
 

@@ -45,7 +45,7 @@ export default function NASAPage() {
       <hr className="my-10 border-neutral-700" />
 
       {/* Project Overview */}
-      <Section title="Project Overview">
+      <Section title="Internship Overview">
         <p>
           During Summer 2025, I worked with NASA&apos;s Small Spacecraft Systems
           Virtual Institute to re-engineer how the aerospace industry accesses
