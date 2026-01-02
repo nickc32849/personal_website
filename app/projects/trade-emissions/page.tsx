@@ -24,8 +24,8 @@ export default function TradeWarsEmissionsGlobalDataAnalysisPage() {
         and environmental spillovers.
       </p>
 
-      <hr className="my-8" />
-
+      {/* Divider between summary and rest of page */}
+      <hr className="my-12 border-gray-700" />
 
       <Section title="The Challenge">
         <p>
