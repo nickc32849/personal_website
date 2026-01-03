@@ -35,4 +35,10 @@ export const projects: Project[] = [
     description:
       "Research assistant work using cross-country datasets, difference-in-differences, and GVAR-related data preparation.",
   },
+  {
+    slug: "nexus-investment-fund",
+    title: "Nexus Investment Fund — Energy Transfer Equity Research",
+    description:
+      "Junior Analyst role conducting equity research on Energy Transfer LP, contributing to company analysis, financial metrics, and a live investment pitch.",
+  },
 ];
