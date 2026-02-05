@@ -8,14 +8,6 @@ export default function WhackAMolePage() {
     <ProjectLayout
       title="Whack-A-Mole Arcade Game"
       subtitle="Cornerstone of Engineering 1 &bull; Fall 2025"
-      tags={[
-        "Raspberry Pi Pico",
-        "Python",
-        "Embedded Systems",
-        "Circuit Design",
-        "Prototyping",
-        "Laser Cutting",
-      ]}
     >
       <BackLink href="/projects" label="&larr; Back to Projects" />
 
