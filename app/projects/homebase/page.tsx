@@ -1,167 +1,67 @@
-import Image from "next/image";
-import ProjectLayout from "@/app/components/ProjectLayout";
-import Section from "@/app/components/Section";
-import BackLink from "@/app/components/BackLink";
+import ProjectLayout from "../../components/ProjectLayout";
 
 export default function HomeBasePage() {
   return (
     <ProjectLayout
       title="HomeBase"
-      subtitle="Forge Software Product Lab &bull; Northeastern University &bull; Spring 2025"
-      tags={[
-        "React",
-        "Next.js",
-        "FastAPI",
-        "PostgreSQL",
-        "JWT Authentication",
-        "Docker",
-        "Full-Stack Development",
-        "Agile",
-      ]}
+      subtitle="Forge Software Product Lab - Northeastern University"
+      date="Spring 2025"
     >
-      <BackLink href="/projects" label="&larr; Back to Projects" />
+      <p>
+        Roommates typically juggle multiple apps for expenses, scheduling,
+        chores, and communication — Venmo, group chats, Google Calendar, shared
+        notes. HomeBase was built to replace that fragmentation with a single
+        platform where everything lives in one place, scoped to specific
+        roommate groups with real-time synchronization. I worked on this as part
+        of an 8-person team through Northeastern's Forge Product Lab, a Sherman
+        Center program where students design and build full-stack applications
+        from concept to deployment.
+      </p>
 
-      {/* Summary */}
-      <Section title="">
-        <p>
-          HomeBase is a full-stack roommate coordination app that consolidates
-          expenses, scheduling, chores, and shared shopping lists into a single
-          real-time platform. I built features across both the frontend and
-          backend as part of an 8-person team through Northeastern&apos;s Forge
-          Product Lab. On the frontend, I implemented the sign-in page and
-          tasks page using React and Next.js. On the backend, I built the group
-          join feature using Python, FastAPI, and PostgreSQL. The system uses
-          JWT authentication, Dockerized microservices, and a PostgreSQL
-          database for persistent, group-scoped data.
-        </p>
-      </Section>
+      {/* Uncomment when you have a screenshot
+      <Image
+        src="/projects/homebase/dashboard.png"
+        alt="HomeBase dashboard showing group-based navigation"
+        width={1200}
+        height={700}
+        className="rounded-lg border"
+      />
+      */}
 
-      <hr className="my-12 border-gray-700" />
+      <h2 className="text-xl font-semibold">My Contributions</h2>
+      <p>
+        I worked across both ends of the stack, owning specific features from
+        design through implementation. On the frontend, I built the sign-in page
+        and the tasks page using React and Next.js — the sign-in page connects
+        to a JWT-based auth flow on the backend, and the tasks page is where
+        roommates create, assign, and complete household chores. On the backend,
+        I designed and built the group join feature in Python using FastAPI and
+        PostgreSQL, handling the API endpoint, database logic for group
+        membership, and input validation.
+      </p>
 
-      <Section title="Project Overview">
-        <p>
-          Roommates typically juggle multiple apps for expenses, scheduling,
-          chores, and communication&mdash;Venmo, group chats, Google Calendar,
-          shared notes. HomeBase replaces that fragmentation with a single
-          platform where everything lives in one place, scoped to specific
-          roommate groups with real-time synchronization.
-        </p>
-      </Section>
+      <h2 className="text-xl font-semibold">Technical Stack</h2>
+      <p>
+        The frontend uses React with Next.js for server-side rendering and
+        routing. The backend runs on Python with FastAPI for RESTful endpoints
+        and Pydantic for data validation, backed by PostgreSQL for persistent,
+        group-scoped storage. Authentication is handled through JWT tokens and
+        password hashing. The whole system is containerized with Docker, which
+        was essential for keeping environments consistent across eight developers
+        with different local setups. We used GitHub for version control and Jira
+        for sprint planning.
+      </p>
 
-      <Section title="Product Snapshot">
-        <div className="space-y-3">
-          <Image
-            src="/images/homebase.png"
-            alt="HomeBase application interface"
-            width={1200}
-            height={700}
-            className="rounded-lg border"
-          />
-          <p className="text-sm text-neutral-400">
-            HomeBase dashboard showing group-based navigation and shared
-            coordination tools.
-          </p>
-        </div>
-      </Section>
-
-      <Section title="My Contributions">
-        <p>
-          I worked across both ends of the stack, owning specific features from
-          design through implementation:
-        </p>
-        <ul className="list-disc space-y-2 pl-5 mt-3">
-          <li>
-            <strong>Sign-in page (frontend):</strong> Built the authentication
-            UI in React/Next.js, connecting to the JWT-based auth flow on the
-            backend
-          </li>
-          <li>
-            <strong>Tasks page (frontend):</strong> Implemented the chore
-            management interface where roommates can create, assign, and
-            complete household tasks
-          </li>
-          <li>
-            <strong>Group join feature (backend):</strong> Designed and built
-            the API endpoint in FastAPI that lets users join existing roommate
-            groups, including database logic in PostgreSQL for group membership
-            and validation
-          </li>
-        </ul>
-      </Section>
-
-      <Section title="Technical Stack">
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            <strong>Frontend:</strong> React with Next.js for server-side
-            rendering and routing
-          </li>
-          <li>
-            <strong>Backend:</strong> Python with FastAPI for RESTful API
-            endpoints, Pydantic for data validation
-          </li>
-          <li>
-            <strong>Database:</strong> PostgreSQL for persistent, group-scoped
-            data storage
-          </li>
-          <li>
-            <strong>Auth:</strong> JWT tokens and password hashing for secure
-            session management
-          </li>
-          <li>
-            <strong>Infrastructure:</strong> Docker for containerization and
-            consistent development environments
-          </li>
-          <li>
-            <strong>Workflow:</strong> GitHub for version control, Jira for
-            sprint planning and task tracking
-          </li>
-        </ul>
-      </Section>
-
-      <Section title="Development Process">
-        <p>
-          The team followed an agile workflow with iterative design reviews.
-          Figma prototypes were created before implementation to align on UI/UX
-          decisions. Two formal showcase events were held to present progress,
-          demonstrate functionality, and incorporate feedback.
-        </p>
-      </Section>
-
-      <Section title="Key Takeaways">
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            Building features across the full stack&mdash;from React components
-            to FastAPI endpoints to PostgreSQL queries&mdash;in a single project
-          </li>
-          <li>
-            Working in a larger team with clear ownership boundaries and
-            coordinated integration points
-          </li>
-          <li>
-            Implementing secure authentication flows with JWT tokens and
-            protected routes
-          </li>
-          <li>
-            Using Docker to ensure consistent environments across 8 developers
-            with different local setups
-          </li>
-        </ul>
-      </Section>
-
-      <Section title="Team">
-        <p>
-          8-person team with collaborative development across frontend, backend,
-          and design. I focused on authentication UI, task management UI, and
-          group membership backend logic.
-        </p>
-      </Section>
-
-      <hr className="my-12 border-gray-700" />
-
-      <p className="italic text-white">
-        Completed as part of Forge: A Sherman Center Program Software Product
-        Lab, where students design and build full-stack applications from
-        concept to deployment.
+      <h2 className="text-xl font-semibold">What I Took Away</h2>
+      <p>
+        This was my first time building features across the full stack in a
+        single project — going from React components to FastAPI endpoints to
+        PostgreSQL queries in the same week. Working in a larger team taught me a
+        lot about ownership boundaries and coordinated integration, since my
+        backend group join feature had to mesh with someone else's frontend group
+        management flow. The team followed an agile workflow with Figma
+        prototypes before implementation and two formal showcase events where we
+        presented progress and incorporated feedback.
       </p>
     </ProjectLayout>
   );
