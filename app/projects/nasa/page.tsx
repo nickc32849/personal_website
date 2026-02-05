@@ -6,7 +6,7 @@ export default function NASAPage() {
   return (
     <ProjectLayout
       title="NASA &mdash; Small Spacecraft Systems Virtual Institute"
-      subtitle="Data Extraction &amp; Systems Integration &bull; Summer 2025"
+      subtitle="Data Extraction &amp; Spacecraft Subsystem Analysis &bull; Summer 2025"
       tags={[
         "NASA",
         "Aerospace Systems",
@@ -22,118 +22,137 @@ export default function NASAPage() {
       {/* Summary */}
       <Section title="">
         <p>
-          During Summer 2025, I worked with NASA&apos;s Small Spacecraft Systems
-          Virtual Institute (S3VI) to transform the 461-page State of the Art
-          of Small Spacecraft Technology report from a static document into
-          structured, query-ready data. I extracted and organized technical
-          specifications from 65+ vendor tables across seven spacecraft
-          subsystem categories, cataloging them into Excel-based schemas that
-          the software development team could consume for a part-matching web
-          application. I collaborated with a cross-functional team of 15 interns
-          spanning software, data, and business roles.
+          During Summer 2025, I worked with NASA&apos;s Small Spacecraft
+          Systems Virtual Institute (S3VI) at the Ames Research Center under
+          Dr. Craig Burkhard, Deputy Director of S3VI. Our team of 15
+          Northeastern interns was tasked with transforming NASA&apos;s 461-page{" "}
+          <em>State of the Art of Small Spacecraft Technology</em> report from a
+          static reference document into structured, query-ready data&mdash;the
+          foundation for an interactive tool that would let mission designers
+          search, filter, and compare spacecraft components in seconds instead of
+          hours. My role focused on extracting, validating, and structuring the
+          raw subsystem data that would feed this system.
         </p>
       </Section>
 
       <hr className="my-12 border-gray-700" />
 
-      <Section title="Project Overview">
+      <Section title="The Challenge">
         <p>
-          NASA&apos;s State of the Art report is the aerospace industry&apos;s
-          primary catalog of flight-ready spacecraft technologies, used by
-          universities, startups, and government agencies for mission planning.
-          The problem was not a lack of data but usability&mdash;hundreds of
-          pages of high-value subsystem specifications spread across
-          inconsistent table formats, making real engineering comparisons slow
-          and error-prone.
+          NASA&apos;s <em>State of the Art</em> report is the aerospace
+          industry&apos;s primary catalog of flight-ready small spacecraft
+          technologies. Universities, commercial startups, and government
+          agencies worldwide rely on it for mission planning. The problem was
+          not a lack of data&mdash;it was usability. Hundreds of pages of vendor
+          specifications were spread across inconsistent table formats with no
+          centralized way to search, filter, or compare components. A mission
+          designer looking for a compatible reaction wheel or power management
+          system had to manually cross-reference dozens of tables across
+          multiple chapters, a process that was slow, error-prone, and
+          inaccessible to teams without deep institutional knowledge.
         </p>
         <p className="mt-4">
-          The S3VI team was building a subsystem matching platform&mdash;
-          internally described as a &ldquo;dating app for space
-          parts&rdquo;&mdash;that would let users input mission requirements and
-          receive ranked, compatibility-scored component options. My role was
-          preparing the data layer that made this possible.
+          The S3VI team set out to solve this by building what we internally
+          called a &ldquo;dating app for space parts&rdquo;&mdash;a web
+          platform where users could input their mission parameters and receive
+          ranked, compatibility-scored component matches. Before any of that
+          could happen, every vendor table in the report needed to be identified,
+          extracted, validated, and structured into a database-ready format.
+          That was my job.
         </p>
       </Section>
 
       <Section title="What I Did">
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            Extracted and cataloged spacecraft subsystem data across seven
-            report chapters covering power systems, propulsion, communications,
-            avionics, ADCS, thermal, and structural systems
-          </li>
-          <li>
-            Reorganized fragmented vendor tables into structured Excel schemas,
-            enabling consistent filtering by form factor, technology maturity,
-            vendor, and mission applicability
-          </li>
-          <li>
-            Resolved vendor naming inconsistencies across chapters (e.g.
-            &ldquo;Astro Digital,&rdquo; &ldquo;Astro Digital US,&rdquo; and
-            &ldquo;Astro Digital Inc.&rdquo;) by designing normalization rules
-            that consolidated entities without losing organizational distinctions
-          </li>
-          <li>
-            Validated data completeness and accuracy to ensure no qualifying
-            vendors or technologies were omitted&mdash;critical for algorithmic
-            credibility downstream
-          </li>
-          <li>
-            Collaborated directly with software development interns to align
-            data models with system requirements, resolving schema mismatches
-            and naming conflicts
-          </li>
-        </ul>
+        <p>
+          I was assigned pages 1 through 66 of the report, covering Chapters 2
+          and 3&mdash;the hosted orbital service providers, complete small
+          spacecraft platforms (from PocketQubes through ESPA-class vehicles),
+          solar cells, solar arrays, battery packs, solid-state batteries, and
+          power management and distribution systems (PMAD). My core task was to
+          go through every table in these chapters and determine which ones were
+          actual vendor/manufacturer tables with component specifications versus
+          explanation or comparison tables that were not relevant to the
+          database. This required careful judgment&mdash;some tables compared
+          technologies conceptually while others listed specific products with
+          measurable specs, and the distinction was not always obvious.
+        </p>
+        <p className="mt-4">
+          For each qualifying vendor table, I cataloged the table title,
+          number, and page range, then extracted the data into structured Excel
+          schemas. This involved reorganizing fragmented information into
+          consistent formats that could be filtered by form factor, vendor,
+          technology maturity, and mission applicability. I resolved naming
+          inconsistencies where the same organization appeared under different
+          names across chapters, and I validated completeness to ensure no
+          qualifying vendors or technologies were missed&mdash;a critical
+          requirement since the database&apos;s credibility depended on
+          comprehensive coverage.
+        </p>
+        <p className="mt-4">
+          Beyond my assigned pages, I also contributed to the team&apos;s
+          broader analysis of how the data should be cleaned for database
+          ingestion. This included recommendations on removing reference
+          columns that were only meaningful in the context of the original
+          report, extracting headquarters information embedded in superscript
+          text, and transforming qualitative fields (like mission heritage) into
+          structured yes/no values that a matching algorithm could process. The
+          data I prepared was handed off to the software team, who converted it
+          from Excel to CSV to JSON to SQL for the web application&apos;s
+          backend.
+        </p>
+      </Section>
+
+      <Section title="What I Learned">
+        <p>
+          Working across the report required developing a working understanding
+          of every major spacecraft subsystem. Through the background materials
+          and the data itself, I studied how the Electrical Power System (EPS)
+          generates, stores, and distributes power through solar arrays and
+          Li-ion batteries; how Attitude Determination and Control Systems
+          (ADCS) use star trackers, reaction wheels, and magnetorquers to
+          maintain orientation; how propulsion systems range from simple cold gas
+          thrusters to advanced Hall-effect electric propulsion; and how Command
+          and Data Handling (CDH) acts as the central nervous system
+          coordinating all subsystems. This systems-level perspective&mdash;
+          understanding how components interact rather than viewing them in
+          isolation&mdash;was one of the most valuable outcomes of the
+          internship.
+        </p>
+        <p className="mt-4">
+          The experience also reinforced the importance of data integrity in
+          engineering contexts. Every entry I extracted had to be traceable back
+          to its source table and page number, with zero tolerance for
+          misrepresentation. Working with a cross-functional team of 15 interns
+          spanning software development, data analysis, and business
+          roles&mdash;coordinated remotely across time zones&mdash;taught me
+          how to communicate technical requirements clearly and align my
+          deliverables with what downstream systems actually needed.
+        </p>
       </Section>
 
       <Section title="Outcome">
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            Converted a static, human-readable report into structured data
-            infrastructure consumable by matching algorithms
-          </li>
-          <li>
-            Enabled programmatic comparison of spacecraft technologies without
-            manual cross-referencing
-          </li>
-          <li>
-            Established a data foundation for tools supporting university,
-            startup, and government mission designers
-          </li>
-        </ul>
-      </Section>
-
-      <Section title="Key Takeaways">
-        <ul className="list-disc space-y-2 pl-5">
-          <li>
-            <strong>Data structuring for engineering applications:</strong>{" "}
-            Converting unstructured aerospace documentation into normalized,
-            reliable schemas
-          </li>
-          <li>
-            <strong>Systems-level thinking:</strong> Working across all major
-            spacecraft subsystems reinforced architecture-level reasoning rather
-            than isolated component analysis
-          </li>
-          <li>
-            <strong>Cross-functional collaboration:</strong> Bridging data work
-            and software development, translating between what the report
-            contained and what the application needed
-          </li>
-          <li>
-            <strong>Operating under real constraints:</strong> Strict reliance
-            on publicly available data, full traceability to source tables, and
-            zero tolerance for misrepresentation
-          </li>
-        </ul>
+        <p>
+          The structured data I extracted became part of the foundation for a
+          searchable spacecraft component database, enabling programmatic
+          comparison of technologies that previously required hours of manual
+          cross-referencing. The vendor directory I helped build covered 65+
+          tables spanning 13 chapters and seven subsystem categories: power,
+          propulsion, guidance/navigation/control, structures, thermal,
+          avionics, and communications. This data infrastructure now supports
+          tools designed to help university research teams, commercial startups,
+          and international space agencies make faster, more informed decisions
+          during mission planning.
+        </p>
       </Section>
 
       <hr className="my-12 border-gray-700" />
 
       <p className="italic">
-        Remote summer internship coordinated through NASA Ames Research Center,
-        involving 15 Northeastern students working on collaborative aerospace
-        data projects for the Small Spacecraft Systems Virtual Institute.
+        Summer 2025 internship at NASA Ames Research Center under Dr. Craig
+        Burkhard, Deputy Director of the Small Spacecraft Systems Virtual
+        Institute (S3VI). Remote collaboration with 15 Northeastern University
+        students on aerospace data infrastructure for spacecraft technology
+        matching.
       </p>
     </ProjectLayout>
   );
