@@ -2,7 +2,7 @@ import ProjectCard from "@/app/components/ProjectCard";
 import { projects } from "@/app/data/projects";
 
 export default function HomePage() {
-  const featuredSlugs = ["whack-a-mole", "nasa"];
+  const featuredSlugs = ["dc-power-analyzer", "nasa"];
   const featuredProjects = projects.filter((p) =>
     featuredSlugs.includes(p.slug)
   );
@@ -17,12 +17,13 @@ export default function HomePage() {
         </div>
 
         <p className="text-lg mt-6">
-          I&apos;m an Electrical Engineering student at Northeastern interested in embedded
-          systems, hardware–software integration, and applied problem-solving.
+          Electrical Engineering student at Northeastern with a Business
+          Administration minor. I build hardware-software systems, analyze
+          complex datasets, and bridge the gap between technical work and
+          real-world constraints&mdash;from NASA spacecraft technology to
+          precision analog circuit design.
         </p>
       </section>
-
-
 
       {/* Featured Projects */}
       <section className="space-y-4">
@@ -41,7 +42,7 @@ export default function HomePage() {
 
         <p className="text-sm">
           <a href="/projects" className="underline">
-            View all projects →
+            View all projects &rarr;
           </a>
         </p>
       </section>

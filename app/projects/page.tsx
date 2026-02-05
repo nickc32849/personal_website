@@ -7,7 +7,8 @@ export default function ProjectsPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold">Projects</h1>
         <p className="text-base">
-          Selected work across engineering, data, and product development.
+          Selected work across embedded systems, data analysis, and product
+          development.
         </p>
       </header>
 

@@ -6,222 +6,146 @@ export default function NexusInvestmentFundPage() {
   return (
     <ProjectLayout
       title="Nexus Investment Fund: Energy Transfer LP Equity Research"
-      subtitle="Junior Analyst • Spring 2025 • Northeastern University London FinTech Society"
+      subtitle="Junior Analyst &bull; NU London FinTech Society &bull; Spring 2025"
       tags={[
-        "Nexus Investment Fund",
         "Equity Research",
         "Financial Analysis",
         "Valuation",
-        "Energy",
-        "Pitching",
-        "Team Project",
+        "Microsoft Excel",
+        "Data Analysis",
+        "Public Speaking",
       ]}
     >
-      <BackLink href="/projects" label="Back to Projects" />
+      <BackLink href="/projects" label="&larr; Back to Projects" />
 
-      <Section title="Recruiter Skim">
+      {/* Summary */}
+      <Section title="">
         <p>
-          Junior Analyst with the Nexus Investment Fund (Northeastern University
-          London FinTech Society), where I worked on a four-person team conducting
-          equity research on Energy Transfer LP (NYSE: ET). I contributed to company
-          fundamentals, business model analysis, and financial efficiency metrics,
-          including accounts receivable turnover (2021–2024), using Yahoo Finance
-          and company filings. Our team produced a full equity report and live
-          investor pitch recommending a Long Buy based on Energy Transfer’s
-          fee-based revenue model, scale advantages, and valuation relative to
-          peers.
+          As a Junior Analyst with the Nexus Investment Fund (Northeastern
+          University London FinTech Society), I worked on a four-person team
+          conducting equity research on Energy Transfer LP (NYSE: ET), a $52B
+          midstream energy infrastructure company operating 125,000+ miles of
+          pipeline across the U.S. I contributed to the company overview,
+          business model analysis, and financial efficiency metrics. Our team
+          produced a full equity report and live investor pitch recommending a
+          Long Buy position based on Energy Transfer&apos;s fee-based revenue
+          model, scale advantages, and valuation discount relative to peers.
         </p>
       </Section>
 
-      <Section title="Overview">
-        <p>
-          As a Junior Analyst at Northeastern University London's Nexus Investment
-          Fund, I collaborated on a four-person team to research and pitch Energy
-          Transfer LP, a midstream energy company operating over 125,000 miles of
-          pipelines across the U.S. The project entailed a written equity report and
-          an investment pitch recommending a "Long Buy," based on the company's
-          market leadership, stable fee-based revenue model, and strategic
-          positioning in the Permian Basin.
-        </p>
-      </Section>
+      <hr className="my-12 border-gray-700" />
 
       <Section title="The Challenge">
-        <h3 style={{ marginTop: 0 }}>Problem</h3>
         <p>
           Analyst teams were tasked with identifying an undervalued investment
-          opportunity and presenting equity research to the fund's leaders. Our
-          team evaluated Energy Transfer LP across multiple factors, including
-          financial health, competitive positioning, industry trends, and risks, to
-          determine whether the stock represented a worthy investment.
+          opportunity and presenting equity research to the fund&apos;s
+          leadership. Our team evaluated Energy Transfer across financial
+          health, competitive positioning, industry trends, and risk factors to
+          build a defensible investment thesis&mdash;all within a compressed
+          timeline simulating real investment research conditions.
         </p>
-
-        <h3>Constraints</h3>
-        <ul>
-          <li>
-            Limited timeframe simulating realistic investment research conditions
-          </li>
-          <li>Four-person team with mixed finance experience levels</li>
-          <li>
-            Required professional-quality deliverables: a detailed equity report and
-            investor pitch presentation
-          </li>
-          <li>
-            Required a clear, defensible investment thesis backed by quantitative and
-            qualitative analysis
-          </li>
-        </ul>
       </Section>
 
-      <Section title="My Role & Contributions">
-        <p>I was responsible for sections of the Company Overview, including:</p>
-
-        <h3 style={{ marginTop: 0 }}>Basic Company Details</h3>
-        <ul>
-          <li>Name, ticker, market capitalization, and geographical presence</li>
-          <li>Industry classification and sector positioning</li>
-        </ul>
-
-        <h3>Business Description</h3>
-        <ul>
+      <Section title="My Contributions">
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Primary products and services (pipeline transportation, storage,
-            terminalling for natural gas, crude oil, NGLs, and refined products)
-          </li>
-          <li>Revenue streams and segment breakdown</li>
-          <li>Core customer base and end markets</li>
-        </ul>
-
-        <h3>Financial Analysis</h3>
-        <ul>
-          <li>
-            Calculated the accounts receivable turnover ratio for 2021-2024,
-            analyzing collection efficiency trends
+            <strong>Company overview:</strong> Researched and wrote sections
+            covering Energy Transfer&apos;s business model, revenue streams,
+            segment breakdown, core customer base, and geographic presence
+            across U.S. producing basins
           </li>
           <li>
-            Gathered financial data from Yahoo Finance and Energy Transfer's
-            investor relations materials
+            <strong>Financial analysis:</strong> Calculated accounts receivable
+            turnover ratios for 2021&ndash;2024 to analyze collection
+            efficiency trends, using Yahoo Finance and Energy Transfer&apos;s
+            investor relations filings
           </li>
-        </ul>
-
-        <h3>Presentation</h3>
-        <ul>
           <li>
-            Delivered portions of our team's pitch to the fund’s leaders, explaining
-            our company analysis and supporting our Long Buy recommendation
+            <strong>Live pitch delivery:</strong> Presented the company analysis
+            and business model sections of our team&apos;s investor pitch,
+            supporting the Long Buy recommendation
           </li>
         </ul>
       </Section>
 
       <Section title="Key Findings">
-        <h3 style={{ marginTop: 0 }}>Market Position</h3>
-        <ul>
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Operates one of the largest midstream networks in the U.S., with 21%
-            market share in gas pipeline transportation
+            One of the largest midstream networks in the U.S. with 21% market
+            share in gas pipeline transportation and dominant Permian Basin
+            infrastructure
           </li>
           <li>
-            Strategic presence across all major U.S. producing basins, particularly
-            dominant infrastructure in the Permian Basin
-          </li>
-        </ul>
-
-        <h3>Financial Stability</h3>
-        <ul>
-          <li>
-            90% of revenue from fee-based contracts, providing insulation from
-            commodity price volatility
-          </li>
-          <li>2024 revenue of $82.67B (5.2% YoY growth)</li>
-          <li>Adjusted EBITDA growth from $13.0B (2021) to $15.5B (2024)</li>
-          <li>9% distribution yield with consistent quarterly increases</li>
-        </ul>
-
-        <h3>Valuation</h3>
-        <ul>
-          <li>
-            Forward P/E of 10.76 compared to competitor Kinder Morgan's 20.53
+            90% of revenue from fee-based contracts, insulating the business
+            from commodity price volatility
           </li>
           <li>
-            Enterprise Value/Revenue ratio of 1.52, indicating potential undervaluation
-            relative to peers
+            2024 revenue of $82.67B (5.2% YoY growth) with adjusted EBITDA
+            growing from $13.0B to $15.5B over 2021&ndash;2024
+          </li>
+          <li>
+            Forward P/E of 10.76 vs. competitor Kinder Morgan at 20.53,
+            suggesting potential undervaluation relative to peers
           </li>
         </ul>
       </Section>
 
       <Section title="What I Learned">
-        <h3 style={{ marginTop: 0 }}>Equity Valuation Fundamentals</h3>
-        <p>
-          Understanding that company valuation requires examining multiple factors
-          simultaneously, including financial metrics, competitive dynamics, industry
-          trends, management quality, and macroeconomic conditions, rather than
-          relying on just one indicator.
-        </p>
-
-        <h3>Financial Data Analysis</h3>
-        <p>
-          Practical experience gathering and interpreting financial statements,
-          calculating ratios like accounts receivable turnover, and understanding what
-          these metrics show about operational efficiency.
-        </p>
-
-        <h3>Cross-Functional Collaboration</h3>
-        <p>
-          Working with teammates, each responsible for different sections (industry
-          analysis, valuation modeling, risk assessment), taught me how professional
-          equity research teams divide and integrate their work.
-        </p>
-
-        <h3>Investment Communication</h3>
-        <p>
-          Translating complex financial analysis into a clear, persuasive pitch format;
-          learning to balance technical detail with accessibility for the audience.
-        </p>
-
-        <h3>Research Methodology</h3>
-        <p>
-          Developing systematic approaches to company research, starting with publicly
-          available sources (SEC filings, earnings calls, industry reports) and
-          building a comprehensive picture piece by piece.
-        </p>
+        <ul className="list-disc space-y-2 pl-5">
+          <li>
+            <strong>Equity valuation fundamentals:</strong> Company valuation
+            requires examining financial metrics, competitive dynamics, industry
+            trends, and macroeconomic conditions simultaneously rather than
+            relying on any single indicator
+          </li>
+          <li>
+            <strong>Financial data analysis:</strong> Practical experience
+            gathering and interpreting financial statements, calculating
+            efficiency ratios, and understanding what those metrics reveal
+            about operational performance
+          </li>
+          <li>
+            <strong>Investment communication:</strong> Translating complex
+            financial analysis into a clear, persuasive pitch&mdash;balancing
+            technical detail with accessibility for the audience
+          </li>
+          <li>
+            <strong>Team-based research:</strong> Dividing a comprehensive
+            equity report across four analysts (company overview, industry
+            analysis, valuation modeling, risk assessment) and integrating the
+            pieces into a cohesive deliverable
+          </li>
+        </ul>
       </Section>
 
       <Section title="Project Details">
-        <ul>
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            <strong>Organization</strong> Nexus Investment Fund, Northeastern University
-            London FinTech Society
+            <strong>Organization:</strong> Nexus Investment Fund, NU London
+            FinTech Society
           </li>
           <li>
-            <strong>Role</strong> Junior Analyst
+            <strong>Team:</strong> 4 analysts
           </li>
           <li>
-            <strong>Team Size</strong> 4 analysts
+            <strong>Company:</strong> Energy Transfer LP (NYSE: ET)
           </li>
           <li>
-            <strong>Timeline</strong> Spring 2025
+            <strong>Recommendation:</strong> Long Buy
           </li>
           <li>
-            <strong>Company Analyzed</strong> Energy Transfer LP (NYSE: ET)
-          </li>
-          <li>
-            <strong>Recommendation</strong> Long Buy
-          </li>
-          <li>
-            <strong>Deliverables</strong> Equity report, investor pitch presentation
+            <strong>Deliverables:</strong> Equity report and live investor
+            pitch presentation
           </li>
         </ul>
       </Section>
 
-      <Section title="Tools & Resources Used">
-        <ul>
-          <li>Yahoo Finance (financial data, ratios, historical performance)</li>
-          <li>
-            Energy Transfer investor relations materials (10-K filings, earnings reports)
-          </li>
-          <li>Company website and press releases</li>
-          <li>Industry research reports</li>
-        </ul>
-      </Section>
+      <hr className="my-12 border-gray-700" />
+
+      <p className="italic text-white">
+        Completed as a Junior Analyst with the Nexus Investment Fund through
+        Northeastern University London&apos;s FinTech Society (Spring 2025).
+      </p>
     </ProjectLayout>
   );
 }

@@ -6,7 +6,8 @@ export default function ContactPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold">Contact</h1>
         <p className="text-base">
-          Best way to reach me is email. I usually respond within 1–2 days.
+          Best way to reach me is email. I usually respond within 1&ndash;2
+          days.
         </p>
       </header>
 
@@ -33,10 +34,21 @@ export default function ContactPage() {
           </a>
         </div>
 
+        <div className="space-y-2">
+          <h2 className="text-xl font-semibold">GitHub</h2>
+          <a
+            className="underline"
+            href="https://github.com/nickc32849"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View my projects on GitHub
+          </a>
+        </div>
 
         <div className="pt-2">
           <Link href="/projects" className="underline text-sm">
-            View projects →
+            View projects &rarr;
           </Link>
         </div>
       </section>

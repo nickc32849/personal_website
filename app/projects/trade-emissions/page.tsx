@@ -6,159 +6,140 @@ export default function TradeWarsEmissionsGlobalDataAnalysisPage() {
   return (
     <ProjectLayout
       title="Trade Wars, Emissions, and Global Data Analysis"
-      subtitle=""
+      subtitle="Undergraduate Research Assistant &bull; Northeastern University London &bull; Summer 2025"
       tags={[
         "Data Analysis",
         "Econometrics",
-        "Research Collaboration",
         "Excel",
+        "Stata",
         "Statistical Modeling",
-        "Data Collection",
-        "Causal Inference",
-        "Financial Data",
-        "Environmental Economics"
+        "Research",
+        "Large-Scale Datasets",
       ]}
     >
-      <BackLink href="/projects" label="← Back to Projects" />
+      <BackLink href="/projects" label="&larr; Back to Projects" />
 
-      <p>
-        Collaborated with an economics professor and two student researchers on a global
-        econometric study analyzing how U.S.-initiated trade wars reshaped international trade
-        flows and environmental outcomes. Built and validated large-scale datasets spanning all
-        countries from 1970 to the present, integrating emissions data, trade distances,
-        environmental regulation indices, and macro-financial variables. Supported
-        difference-in-differences and Global Vector Autoregression (GVAR) modeling to identify
-        causal effects of tariff exposure on emissions and trace how trade shocks propagated
-        through global financial markets. The work expanded an initially BRICS-focused study
-        into a comprehensive global analysis linking trade policy, supply-chain reconfiguration,
-        and environmental spillovers.
-      </p>
+      {/* Summary */}
+      <Section title="">
+        <p>
+          I served as an undergraduate research assistant to Dr. Mazen Diwani at
+          Northeastern University London, working with two other student
+          researchers on a global econometric study analyzing how U.S.-initiated
+          trade wars reshaped international trade flows and environmental
+          outcomes. I built and validated large-scale datasets spanning all
+          countries from 1970 to present, integrating emissions data, trade
+          distances, environmental regulation indices, and macro-financial
+          variables. The work supported difference-in-differences and Global
+          Vector Autoregression (GVAR) modeling to identify causal effects of
+          tariff exposure on carbon emissions.
+        </p>
+      </Section>
 
-      {/* Divider between summary and rest of page */}
       <hr className="my-12 border-gray-700" />
 
-      <Section title="The Challenge">
+      <Section title="The Research Question">
         <p>
-          U.S.-initiated trade wars disrupted global supply chains, shifting production and
-          transport routes to reroute across countries and sectors. The core question was whether
-          these shifts increased carbon emissions by lengthening shipping distances and
-          relocating pollution-intensive production toward countries with weaker environmental
-          regulations.
+          When U.S.-initiated trade wars disrupted global supply chains,
+          production and shipping routes shifted across countries and sectors.
+          The core question was whether these shifts increased carbon emissions
+          by lengthening shipping distances and relocating pollution-intensive
+          production toward countries with weaker environmental regulations.
         </p>
       </Section>
 
       <Section title="My Role">
         <p>
-          Research Assistant to Dr. Mazen Diwani, collaborating with two other student researchers on a
-          global economics research project. Focused on data pipeline development and econometric
-          support, building analysis-ready datasets covering all countries from 1970 to the present and
-          contributing to difference-in-differences (DiD) and Global Vector Autoregression (GVAR)
-          modeling.
+          I focused on data pipeline development and econometric
+          support&mdash;building the analysis-ready datasets that made the
+          modeling possible.
         </p>
       </Section>
 
-      <Section title="Technical Contributions">
-        <h3 className="font-semibold">Data Pipeline Development</h3>
-        <ul className="list-disc pl-5">
-          <li>Collaborated on building a global panel dataset (1970–present) spanning all countries</li>
-          <li>Compiled historical CO₂ emissions data (total, sectoral, and intensity-based)</li>
-          <li>Integrated bilateral trade distances and transport-related emissions proxies</li>
+      <Section title="What I Did">
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Collected environmental regulation and sustainability indices for cross-country
+            Built a global panel dataset (1970&ndash;present) spanning all
+            countries, compiling historical CO&#8322; emissions data (total,
+            sectoral, and intensity-based)
+          </li>
+          <li>
+            Integrated bilateral trade distances, transport-related emissions
+            proxies, and environmental regulation indices for cross-country
             comparison
           </li>
           <li>
-            Gathered quarterly stock market indices for 30+ countries using Bloomberg and
-            Datastream for Global Vector Autoregression (GVAR) modeling
+            Gathered quarterly stock market indices for 30+ countries using
+            Bloomberg and Datastream for the GVAR modeling component
           </li>
           <li>
-            Organized financial variables (GDP, interest rates, exchange rates), prioritizing
-            quarterly over monthly or annual frequency
+            Organized financial variables (GDP, interest rates, exchange rates),
+            prioritizing quarterly frequency for model consistency
           </li>
           <li>
-            Structured datasets to support pre-trade war and post-trade war comparisons
-            (1970-2017 vs. 2018-2021)
-          </li>
-        </ul>
-
-        <p className="mt-4">
-          This work expanded the project well beyond its original BRICS-only scope into a fully global,
-          multi-decade dataset.
-        </p>
-
-        <h3 className="font-semibold mt-6">Econometric Analysis</h3>
-        <ul className="list-disc pl-5">
-          <li>
-            Supported difference-in-differences (DiD) models to estimate the causal effect of U.S.
-            tariff exposure on emissions
-          </li>
-          <li>Worked with treatment variables based on U.S. tariff rates by country and sector</li>
-          <li>
-            Integrated key controls, including GDP per capita, energy consumption, and population
+            Structured all datasets to support pre-trade-war vs.
+            post-trade-war comparisons (1970&ndash;2017 vs. 2018&ndash;2021)
           </li>
           <li>
-            Contributed to the GVAR model preparation, analyzing how trade shocks propagated
-            through global financial markets
-          </li>
-        </ul>
-
-        <h3 className="font-semibold mt-6">Research &amp; Literature Review</h3>
-        <ul className="list-disc pl-5">
-          <li>
-            Conducted a literature review on carbon leakage and the Pollution Haven Hypothesis
-            (PHH)
+            Supported difference-in-differences models estimating the causal
+            effect of U.S. tariff exposure on emissions, integrating controls
+            for GDP per capita, energy consumption, and population
           </li>
           <li>
-            Evaluated whether trade and production shifted toward countries with weaker
-            environmental regulations
-          </li>
-          <li>
-            Analyzed the role of shipping distance in driving transport-related CO₂ emissions from
-            rerouted trade flows
+            Expanded the project from its original BRICS-only scope into a
+            fully global, multi-decade analysis
           </li>
         </ul>
       </Section>
 
-      <Section title="Research Findings">
-        <ul className="list-disc pl-5">
+      <Section title="Key Findings">
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Global emissions increased 0.3-1.8% as production shifted away from U.S.-China corridors
-            toward longer, more carbon-intensive routes
+            Global emissions increased 0.3&ndash;1.8% as production shifted
+            away from U.S.-China corridors toward longer, more
+            carbon-intensive routes
           </li>
           <li>
-            Trade diversion toward BRICS countries (notably Brazil's agricultural exports and China's
-            manufacturing) created measurable environmental spillovers
+            Trade diversion toward BRICS countries created measurable
+            environmental spillovers, particularly in Brazil&apos;s agricultural
+            exports and China&apos;s manufacturing
           </li>
           <li>
-            Environmental regulation outcomes varied significantly—some countries (Brazil, China)
-            improved performance while others (Russia) lagged
+            Environmental regulation outcomes varied
+            significantly&mdash;some countries improved performance while
+            others lagged
           </li>
         </ul>
-      </Section>
-
-      <Section title="Outcome">
-        <p>
-          This project produced a comprehensive, global analysis linking trade policy to environmental
-          outcomes. My work enabled econometric modeling using 50+ years of data across all countries,
-          transforming a narrow regional study into a generalizable global framework for analyzing
-          trade-environment interactions.
-        </p>
       </Section>
 
       <Section title="Key Takeaways">
-        <p>
-          Working on a multi-researcher econometric project taught me how to transform complex policy
-          questions into testable hypotheses. Building the data pipeline from raw sources to
-          analysis-ready datasets showed me the importance of systematic data validation—one
-          misaligned time period could invalidate the entire difference-in-differences model.
-        </p>
-        <p className="mt-4">
-          The project reinforced that environmental consequences don't exist in isolation. Trade policy
-          decisions trigger cascading effects across supply chains, shipping routes, and regulatory
-          environments. Quantifying these relationships requires combining economic theory with rigorous
-          data work.
-        </p>
+        <ul className="list-disc space-y-2 pl-5">
+          <li>
+            Building reliable data pipelines from raw sources to
+            analysis-ready datasets&mdash;one misaligned time period could
+            invalidate the entire difference-in-differences model
+          </li>
+          <li>
+            Working with datasets containing 50,000+ observations across
+            multiple decades and all countries
+          </li>
+          <li>
+            Translating complex policy questions into testable hypotheses with
+            rigorous quantitative methods
+          </li>
+          <li>
+            Collaborating within a multi-researcher team where each
+            person&apos;s data work directly affected downstream modeling
+          </li>
+        </ul>
       </Section>
+
+      <hr className="my-12 border-gray-700" />
+
+      <p className="italic text-white">
+        Undergraduate research conducted at Northeastern University London under
+        Dr. Mazen Diwani, supporting a peer-reviewed publication on carbon
+        leakage and trade policy.
+      </p>
     </ProjectLayout>
   );
 }

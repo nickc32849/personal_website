@@ -5,210 +5,136 @@ import BackLink from "@/app/components/BackLink";
 export default function NASAPage() {
   return (
     <ProjectLayout
-      title="NASA — Small Spacecraft Systems Virtual Institute"
-      subtitle="Aerospace Subsystem Matching • Data Engineering & Systems Integration"
+      title="NASA &mdash; Small Spacecraft Systems Virtual Institute"
+      subtitle="Data Extraction &amp; Systems Integration &bull; Summer 2025"
       tags={[
         "NASA",
         "Aerospace Systems",
         "Small Satellites",
-        "Data Engineering",
-        "Systems Integration",
-        "Technical Research",
-        "Excel",
+        "Microsoft Excel",
+        "Data Analysis",
+        "Technical Documentation",
         "Cross-Functional Collaboration",
       ]}
     >
+      <BackLink href="/projects" label="&larr; Back to Projects" />
 
-      <BackLink href="/projects" label="Back to Projects" />
-
-      {/* Recruiter Skim */}
+      {/* Summary */}
       <Section title="">
         <p>
-          During Summer 2025, I worked with NASA’s Small Spacecraft Systems
-          Virtual Institute to transform the State-of-the-Art Small Spacecraft
-          Technology Report from a static, human-readable document into
-          structured, machine-readable data that could support real engineering
-          decisions. I focused on data engineering and systems integration across
-          power, propulsion, communications, avionics, ADCS, thermal, and
-          structural subsystems, extracting and normalizing fragmented tables
-          into consistent schemas consumable by software matching algorithms.
-          My work resolved vendor naming inconsistencies, standardized subsystem
-          classifications, and ensured data completeness and traceability,
-          enabling ranked, compatibility-based subsystem selection without
-          manual research. I collaborated directly with software developers to
-          align data models with system requirements, operating under real NASA
-          constraints including public-data compliance, accuracy, and
-          auditability.
-        </p>
-      </Section>
-
-      <hr className="my-10 border-neutral-700" />
-
-      {/* Project Overview */}
-      <Section title="Internship Overview">
-        <p>
           During Summer 2025, I worked with NASA&apos;s Small Spacecraft Systems
-          Virtual Institute to re-engineer how the aerospace industry accesses
-          the State-of-the-Art Small Spacecraft Technology Report—NASA&apos;s
-          annual catalog of flight-ready spacecraft technologies used by
-          universities, startups, and government agencies.
-        </p>
-        <p>
-          The problem was not lack of data, but usability. The report contains
-          hundreds of pages of high-value subsystem data, yet it is effectively
-          unusable for real engineering decisions. My role focused on converting
-          this static document into structured, searchable, and interoperable
-          data that could directly support spacecraft design and subsystem
-          selection.
+          Virtual Institute (S3VI) to transform the 461-page State of the Art
+          of Small Spacecraft Technology report from a static document into
+          structured, query-ready data. I extracted and organized technical
+          specifications from 65+ vendor tables across seven spacecraft
+          subsystem categories, cataloging them into Excel-based schemas that
+          the software development team could consume for a part-matching web
+          application. I collaborated with a cross-functional team of 15 interns
+          spanning software, data, and business roles.
         </p>
       </Section>
 
-      {/* Problem */}
-      <Section title="Problem">
-        <p>Mission designers currently must:</p>
-        <ul>
-          <li>Manually scan hundreds of pages to compare subsystems</li>
-          <li>Interpret inconsistent vendor naming and table structures</li>
-          <li>Cross-reference specifications scattered across disconnected chapters</li>
-        </ul>
+      <hr className="my-12 border-gray-700" />
+
+      <Section title="Project Overview">
         <p>
-          This makes subsystem selection slow, error-prone, and inaccessible to
-          teams without deep institutional expertise.
+          NASA&apos;s State of the Art report is the aerospace industry&apos;s
+          primary catalog of flight-ready spacecraft technologies, used by
+          universities, startups, and government agencies for mission planning.
+          The problem was not a lack of data but usability&mdash;hundreds of
+          pages of high-value subsystem specifications spread across
+          inconsistent table formats, making real engineering comparisons slow
+          and error-prone.
+        </p>
+        <p className="mt-4">
+          The S3VI team was building a subsystem matching platform&mdash;
+          internally described as a &ldquo;dating app for space
+          parts&rdquo;&mdash;that would let users input mission requirements and
+          receive ranked, compatibility-scored component options. My role was
+          preparing the data layer that made this possible.
         </p>
       </Section>
 
-      {/* Technical Contribution */}
-      <Section title="Technical Contribution">
-        <p>
-          I worked on the Aerospace Subsystem Matching effort—internally described
-          as a “dating app for space parts.” The goal was to allow users to input
-          mission requirements and receive ranked, compatibility-scored
-          subsystem options derived directly from NASA’s official data.
-        </p>
-        <ul>
-          <li><strong>Focus:</strong> Data engineering and systems integration</li>
-          <li>
-            <strong>Scope:</strong> Power, propulsion, communications, avionics,
-            ADCS, thermal, and structural systems
-          </li>
-          <li>
-            <strong>Deliverable:</strong> Machine-readable schemas consumable by
-            software matching algorithms
-          </li>
-        </ul>
-      </Section>
-
-      {/* What I Did */}
       <Section title="What I Did">
-        <ul>
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Extracted and normalized spacecraft subsystem data across seven
-            report chapters, covering all major SmallSat subsystems
+            Extracted and cataloged spacecraft subsystem data across seven
+            report chapters covering power systems, propulsion, communications,
+            avionics, ADCS, thermal, and structural systems
           </li>
           <li>
-            Reorganized fragmented technology tables into structured Excel-based
-            schemas, enabling consistent filtering by form factor, maturity,
+            Reorganized fragmented vendor tables into structured Excel schemas,
+            enabling consistent filtering by form factor, technology maturity,
             vendor, and mission applicability
           </li>
           <li>
-            Standardized vendor and subsystem classifications, resolving
-            inconsistencies that would otherwise break downstream logic
-          </li>
-          <li>
-            Collaborated directly with software development interns to resolve
-            schema mismatches, naming conflicts, and integration issues with the
-            web-based matching system
+            Resolved vendor naming inconsistencies across chapters (e.g.
+            &ldquo;Astro Digital,&rdquo; &ldquo;Astro Digital US,&rdquo; and
+            &ldquo;Astro Digital Inc.&rdquo;) by designing normalization rules
+            that consolidated entities without losing organizational distinctions
           </li>
           <li>
             Validated data completeness and accuracy to ensure no qualifying
-            vendors or technologies were omitted—critical for algorithmic
-            credibility
+            vendors or technologies were omitted&mdash;critical for algorithmic
+            credibility downstream
+          </li>
+          <li>
+            Collaborated directly with software development interns to align
+            data models with system requirements, resolving schema mismatches
+            and naming conflicts
           </li>
         </ul>
       </Section>
 
-      {/* Example Technical Challenge */}
-      <Section title="Example Technical Challenge">
-        <p>
-          Chapters 2–7 used inconsistent vendor naming conventions (e.g.
-          “Astro Digital,” “Astro Digital US,” and “Astro Digital Inc.”) across
-          different tables. I designed normalization rules to consolidate
-          entities while preserving organizational and geographic distinctions,
-          preventing duplicate records that would skew compatibility rankings.
-        </p>
-      </Section>
-
-      {/* Outcome & Impact */}
-      <Section title="Outcome & Impact">
-        <ul>
+      <Section title="Outcome">
+        <ul className="list-disc space-y-2 pl-5">
           <li>
-            Converted a static, human-readable report into machine-readable
-            infrastructure
+            Converted a static, human-readable report into structured data
+            infrastructure consumable by matching algorithms
           </li>
           <li>
-            Enabled rapid, programmatic comparison of existing spacecraft
-            technologies without manual research
+            Enabled programmatic comparison of spacecraft technologies without
+            manual cross-referencing
           </li>
           <li>
-            Established a foundation for tools supporting universities, startups,
-            and government mission designers
-          </li>
-          <li>
-            Improved accessibility to NASA technology data while maintaining
-            public-data compliance and full traceability
+            Established a data foundation for tools supporting university,
+            startup, and government mission designers
           </li>
         </ul>
       </Section>
 
-      {/* Key Takeaways */}
       <Section title="Key Takeaways">
-        <p>
-          <strong>Data Structuring and Normalization for Engineering Applications</strong>
-          <br />
-          I developed the ability to convert unstructured, inconsistently
-          formatted aerospace data into normalized schemas that support reliable
-          filtering, comparison, and algorithmic matching.
-        </p>
-
-        <p>
-          <strong>Systems-Level Thinking Across Spacecraft Subsystems</strong>
-          <br />
-          Working across power, propulsion, communications, avionics, ADCS,
-          thermal, and structural systems reinforced architecture-level thinking
-          rather than isolated component analysis.
-        </p>
-
-        <p>
-          <strong>Cross-Functional Collaboration with Software Teams</strong>
-          <br />
-          I collaborated directly with software developers to resolve schema
-          mismatches, naming conflicts, and data-model assumptions impacting
-          system integration.
-        </p>
-
-        <p>
-          <strong>Translating Aerospace Engineering Data into Usable Technical Tools</strong>
-          <br />
-          I learned how to bridge dense engineering documentation and
-          decision-support tools engineers can actually use.
-        </p>
-
-        <p>
-          <strong>Operating Within Real NASA Constraints</strong>
-          <br />
-          All work was performed under real NASA constraints, including strict
-          reliance on publicly available data, full traceability to source
-          tables, and zero tolerance for misrepresentation.
-        </p>
-
-        <hr className="my-10 border-neutral-700" />
-
-        <p className="italic">
-          This was an unofficial, remote summer internship coordinated at NASA
-          Ames Research Center, involving 14 Northeastern students working on
-          collaborative aerospace data projects.
-        </p>
+        <ul className="list-disc space-y-2 pl-5">
+          <li>
+            <strong>Data structuring for engineering applications:</strong>{" "}
+            Converting unstructured aerospace documentation into normalized,
+            reliable schemas
+          </li>
+          <li>
+            <strong>Systems-level thinking:</strong> Working across all major
+            spacecraft subsystems reinforced architecture-level reasoning rather
+            than isolated component analysis
+          </li>
+          <li>
+            <strong>Cross-functional collaboration:</strong> Bridging data work
+            and software development, translating between what the report
+            contained and what the application needed
+          </li>
+          <li>
+            <strong>Operating under real constraints:</strong> Strict reliance
+            on publicly available data, full traceability to source tables, and
+            zero tolerance for misrepresentation
+          </li>
+        </ul>
       </Section>
+
+      <hr className="my-12 border-gray-700" />
+
+      <p className="italic">
+        Remote summer internship coordinated through NASA Ames Research Center,
+        involving 15 Northeastern students working on collaborative aerospace
+        data projects for the Small Spacecraft Systems Virtual Institute.
+      </p>
     </ProjectLayout>
   );
 }
